@@ -4,6 +4,594 @@
   
     
     <entry>
+      <title>redis 过期策略与淘汰机制</title>
+      <link href="/2020/01/25/redis-guo-qi-ce-lue-yu-tao-tai-ji-zhi/"/>
+      <url>/2020/01/25/redis-guo-qi-ce-lue-yu-tao-tai-ji-zhi/</url>
+      
+        <content type="html"><![CDATA[<script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> redis </tag>
+            
+            <tag> expire </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>如何写作技术博客</title>
+      <link href="/2020/01/25/ru-he-xie-zuo-ji-zhu-bo-ke/"/>
+      <url>/2020/01/25/ru-he-xie-zuo-ji-zhu-bo-ke/</url>
+      
+        <content type="html"><![CDATA[<h2 id="hexo静态博客"><a href="#hexo静态博客" class="headerlink" title="hexo静态博客"></a>hexo静态博客</h2><h2 id="github资源托管"><a href="#github资源托管" class="headerlink" title="github资源托管"></a>github资源托管</h2><h2 id="个人域名购买"><a href="#个人域名购买" class="headerlink" title="个人域名购买"></a>个人域名购买</h2><h2 id="域名服务商添加记录"><a href="#域名服务商添加记录" class="headerlink" title="域名服务商添加记录"></a>域名服务商添加记录</h2><h2 id="github-CNAME配置"><a href="#github-CNAME配置" class="headerlink" title="github CNAME配置"></a>github CNAME配置</h2><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>为什么写作技术博客</title>
+      <link href="/2020/01/25/guan-yu-xie-zuo-ji-zhu-bo-ke/"/>
+      <url>/2020/01/25/guan-yu-xie-zuo-ji-zhu-bo-ke/</url>
+      
+        <content type="html"><![CDATA[<h2 id="写作理由"><a href="#写作理由" class="headerlink" title="写作理由"></a>写作理由</h2><h2 id="写作原则"><a href="#写作原则" class="headerlink" title="写作原则"></a>写作原则</h2><h2 id="写作思路"><a href="#写作思路" class="headerlink" title="写作思路"></a>写作思路</h2><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>tile38 geospatial 空间分析 </title>
+      <link href="/2020/01/25/tile38-geospatial-kong-jian-fen-xi/"/>
+      <url>/2020/01/25/tile38-geospatial-kong-jian-fen-xi/</url>
+      
+        <content type="html"><![CDATA[<script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>redis geospatial 空间分析</title>
+      <link href="/2020/01/25/redis-geospatial-kong-jian-fen-xi/"/>
+      <url>/2020/01/25/redis-geospatial-kong-jian-fen-xi/</url>
+      
+        <content type="html"><![CDATA[<script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>python 数据分析 numpy</title>
+      <link href="/2020/01/25/python-shu-ju-fen-xi-numpy/"/>
+      <url>/2020/01/25/python-shu-ju-fen-xi-numpy/</url>
+      
+        <content type="html"><![CDATA[<script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> python </tag>
+            
+            <tag> numpy </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>python pandas 数据分析</title>
+      <link href="/2020/01/23/python-pandas-shu-ju-fen-xi/"/>
+      <url>/2020/01/23/python-pandas-shu-ju-fen-xi/</url>
+      
+        <content type="html"><![CDATA[<p>文章:<br><a href="https://niyanchun.com/explore-data-with-pandas.html" target="_blank" rel="noopener">https://niyanchun.com/explore-data-with-pandas.html</a></p><p>数据:<br><a href="https://archive.ics.uci.edu/ml/datasets/bank+marketing" target="_blank" rel="noopener">https://archive.ics.uci.edu/ml/datasets/bank+marketing</a></p><p>优化:<br><a href="https://blog.esciencecenter.nl/irregular-data-in-pandas-using-c-88ce311cb9ef" target="_blank" rel="noopener">https://blog.esciencecenter.nl/irregular-data-in-pandas-using-c-88ce311cb9ef</a></p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> python </tag>
+            
+            <tag> pandas </tag>
+            
+            <tag> 数据分析 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>http 协议</title>
+      <link href="/2020/01/22/http-xie-yi/"/>
+      <url>/2020/01/22/http-xie-yi/</url>
+      
+        <content type="html"><![CDATA[<p><a href="https://liudanking.com/arch/what-is-head-of-line-blocking-http2-quic/" target="_blank" rel="noopener">https://liudanking.com/arch/what-is-head-of-line-blocking-http2-quic/</a><br><a href="https://liudanking.com/arch/latency-and-user-experience/" target="_blank" rel="noopener">https://liudanking.com/arch/latency-and-user-experience/</a></p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> http </tag>
+            
+            <tag> protocol </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>redis 数据类型</title>
+      <link href="/2020/01/22/redis-shu-ju-lei-xing/"/>
+      <url>/2020/01/22/redis-shu-ju-lei-xing/</url>
+      
+        <content type="html"><![CDATA[<script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>redis 进阶</title>
+      <link href="/2020/01/22/redis-jin-jie/"/>
+      <url>/2020/01/22/redis-jin-jie/</url>
+      
+        <content type="html"><![CDATA[<script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> redis </tag>
+            
+            <tag> nosql </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>redis 初探</title>
+      <link href="/2020/01/22/redis-ji-chu-yong-fa/"/>
+      <url>/2020/01/22/redis-ji-chu-yong-fa/</url>
+      
+        <content type="html"><![CDATA[<h2 id="redis是什么"><a href="#redis是什么" class="headerlink" title="redis是什么"></a>redis是什么</h2><p><a href="https://redis.io/" target="_blank" rel="noopener">Redis</a> 是是一款基于内存数据结构存储的开源软件（BSD licensed），常常被用作数据库，缓存和消息中间件。<br>Redis 支持多种数据结构，如strings,hashes,lists,sets,sorted sets with range queries, bitmaps, hyperloglogs,<br> geospatial indexes with radius queries and streams.<br>Redis内置了复制，lua scripting，LRU清除，事务和不同级别的磁盘持久化，<br>并通过Redis Sentinel 提供高可用，以及基于Redis Cluster的自动分区。</p><h2 id="为什么使用redis"><a href="#为什么使用redis" class="headerlink" title="为什么使用redis"></a>为什么使用redis</h2><h3 id="redis好处"><a href="#redis好处" class="headerlink" title="redis好处"></a>redis好处</h3><p>说到为什么使用redis， 那么肯定要想到使用redis在运用到特定场景下的好处。就目前使用redis的几大场景来看：</p><ul><li>缓存</li><li>排行榜</li><li>计算器/限速器</li><li>好友关系</li><li>简单mq</li><li>session服务器<h3 id="redis不适合做什么"><a href="#redis不适合做什么" class="headerlink" title="redis不适合做什么"></a>redis不适合做什么</h3>redis不是万金油，实际情况下，有它拿手的一面，也有它不合适的一面。</li><li>数据量太大的情况。</li><li>数据访问频率极地的情况。</li></ul><h2 id="Redis安装及操作"><a href="#Redis安装及操作" class="headerlink" title="Redis安装及操作"></a>Redis安装及操作</h2><h3 id="本地安装"><a href="#本地安装" class="headerlink" title="本地安装"></a>本地安装</h3><h3 id="docker安装"><a href="#docker安装" class="headerlink" title="docker安装"></a>docker安装</h3><h2 id="redis常用点"><a href="#redis常用点" class="headerlink" title="redis常用点"></a>redis常用点</h2><p>该篇文为redis基础用户，因此目前只关注redis中五类基础类型的用法，分别是string、list、set、zset和hashes，更高阶的用法<br>会在其他篇幅再做介绍。</p><p><a href="https://redis.io/" target="_blank" rel="noopener">https://redis.io/</a></p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> redis </tag>
+            
+            <tag> nosql </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>序列化 一</title>
+      <link href="/2020/01/22/xu-lie-hua-yi/"/>
+      <url>/2020/01/22/xu-lie-hua-yi/</url>
+      
+        <content type="html"><![CDATA[<script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> serializer </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>python 网络模块</title>
+      <link href="/2020/01/22/python-wang-luo-mo-kuai/"/>
+      <url>/2020/01/22/python-wang-luo-mo-kuai/</url>
+      
+        <content type="html"><![CDATA[<script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> python </tag>
+            
+            <tag> network </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>python 并发</title>
+      <link href="/2020/01/22/python-bing-fa/"/>
+      <url>/2020/01/22/python-bing-fa/</url>
+      
+        <content type="html"><![CDATA[<script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> python </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>python 算法</title>
+      <link href="/2020/01/22/python-suan-fa/"/>
+      <url>/2020/01/22/python-suan-fa/</url>
+      
+        <content type="html"><![CDATA[<script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> python </tag>
+            
+            <tag> algorithm </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>python 基础语法</title>
+      <link href="/2020/01/22/python-ji-chu-yu-fa/"/>
+      <url>/2020/01/22/python-ji-chu-yu-fa/</url>
+      
+        <content type="html"><![CDATA[<script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> python </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>rabbitmq 一试</title>
+      <link href="/2020/01/22/rabbitmq-yi-shi/"/>
+      <url>/2020/01/22/rabbitmq-yi-shi/</url>
+      
+        <content type="html"><![CDATA[<h1 id="rabbit-mq"><a href="#rabbit-mq" class="headerlink" title="rabbit mq"></a>rabbit mq</h1><p>#mq #mq/rabbitmq</p><h2 id="五种队列"><a href="#五种队列" class="headerlink" title="五种队列"></a>五种队列</h2><ul><li><p>Queue——简单队列 一个生产者，一个消费者</p></li><li><p>Work queue——Work模式 一个生产者，多个消费者，每个消费者获取到的消息唯一。</p></li><li><p>Publish/Subscribe——发布/订阅者模式 一个生产者发送的消息会被多个消费者获取。</p></li><li><p>Routing——路由模式 发送消息到交换机并且要指定路由key ，消费者将队列绑定到交换机时需要指定路由key</p></li><li><p>Topics——通配符模式 将路由键和某模式进行匹配，此时队列需要绑定在一个模式上，“#”匹配一个词或多个词，“*”只匹配一个词。<br>[image:D61E6B7C-3A4C-4498-91E7-4F4C276315CB-1280-00000EF29CA43E04/20180815212248727.png]</p></li><li><p>RPC，远程调用，并不算一种队列模式</p></li></ul><pre class="line-numbers language-shell"><code class="language-shell">docker run -d -p 15672:15672 -p 5672:5672 -p 5671:5671 -p 25672:25672 -e RABBITMQ_DEFAULT_USER=sprinter -e RABBITMQ_DEFAULT_PASS=sprinter --name some-rabbit rabbitmq:3.7.15-management <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p>MQ 的模型从大体上看，都是类似的，如下：<br>[image:E248033A-C838-47CC-A225-05D2BB5B9435-336-0000B954BFD69B09/rabbit_mq_2.png]</p><p>而 RabbitMQ 由于是基于 AMQP 协议的开源实现，AMQP 协议比 MQ 模型有更加详细的模型概念，如下：<br>[image:0588DE2F-D534-421D-9AFC-1BA034E141C5-336-0000B95A1A45761D/rabbit_mq.png]</p><h2 id="信道"><a href="#信道" class="headerlink" title="信道"></a>信道</h2><p>如果项目需要发布消息，那么必须要链接到 RabbitMQ，而项目于 RabbitMQ之间使用 TCP 连接，加入每次发布消息都要连接TCP，这不仅会造成连接资源严重浪费，会造成服务器性能瓶颈，所以 RabbitMQ 为所有的线程只用一条 TCP 连接，怎么实现的呢？RabbitMQ 引入了信道的概念，所有需要发布消息的线程都包装成一条信道在 TCP 中传输，理论上 一条 TCP 连接支持无限多个信道<br>[image:D227D030-A85E-4FE1-A1D9-F337F06EEBC7-336-0000B9713AE84CDC/rabbit_mq_3.png]</p><h2 id="队列"><a href="#队列" class="headerlink" title="队列"></a>队列</h2><p>消息队列，用来保存消息直到发送给消费者。它是消息的容器，也是消息的终点。一个消息可投入一个或多个队列。消息一直在队列里面，等待消费者连接到这个队列将其取走。</p><h2 id="交换器"><a href="#交换器" class="headerlink" title="交换器"></a>交换器</h2><p>我们向 RabbitMQ 发送消息，实际上是把消息发到交换器了，再由交换器根据相关路由规则发到特定队列上，在队列上监听的消费者就可以进行消费了，目前 RabbitMQ 共四种类型：direct、fanout、topic、headers 。headers 匹配 AMQP 消息的 header 而不是路由键，此外 headers 交换器和 direct 交换器完全一致，但性能差很多，目前几乎用不到了</p><h3 id="direct交换器"><a href="#direct交换器" class="headerlink" title="direct交换器"></a>direct交换器</h3><p>消息中的路由键（routing key）如果和 Binding 中的 binding key 一致， 交换器就将消息发到对应的队列中。路由键与队列名完全匹配，如果一个队列绑定到交换机要求路由键为“dog”，则只转发 routing key 标记为“dog”的消息，不会转发“dog.puppy”，也不会转发“dog.guard”等等。它是完全匹配、单播的模式。<br>[image:0B77E42C-D0E8-4DCB-95AC-17025289B9DA-336-0000B997C914175E/rabbit_mq_5.png]</p><h3 id="fanout"><a href="#fanout" class="headerlink" title="fanout"></a>fanout</h3><p>每个发送到 fanout 交换器中的消息，他不会去匹配路由键，直接把消息投递到所有绑定到 fanout 交换器中的队列上，它就像一个广播站一样，它会向所有收听广播的用户发送消息。对应到系统上，它允许你针对一个消息作不同操作，比如用户上传了一张新的图片，系统要同时对这个事件进行不同的操作，比如删除旧的图片缓存、增加积分奖励等等。这样就大大降低了系统之间的耦合度了。<br>[image:FD636D7B-80DF-440D-98C5-FBE7A7850281-336-0000B9A3607E65CC/rabbit_mq_6.png]</p><h3 id="topic交换器"><a href="#topic交换器" class="headerlink" title="topic交换器"></a>topic交换器</h3><p>topic 交换器有点类似于 direct 交换器，它通过模式匹配分配消息的路由键属性，将路由键和某个模式进行匹配，此时队列需要绑定到一个模式上。它将路由键和绑定键的字符串切分成单词，这些单词之间用点隔开。它同样也会识别两个通配符：符号“#”和符号“<em>”。#匹配0个或多个单词，</em>匹配不多不少一个单词。</p><h2 id="绑定"><a href="#绑定" class="headerlink" title="绑定"></a>绑定</h2><p>绑定，用于消息队列和交换器之间的关联。一个绑定就是基于路由键将交换器和消息队列连接起来的路由规则，所以可以将交换器理解成一个由绑定构成的路由表，如下：[image:9F294135-2DCE-42FB-9F88-4F714B2A3BEA-336-0000B97D7F4E3035/rabbit_mq_4.png]</p><p>[image:1D2B28A4-056E-4272-A8F9-7B301AF190AB-336-0000BCDF2F6DA37E/v2-7e4c2b538b4f2bcdd626938a5ad46adc_hd.jpg]</p><p>[image:B9D61B09-6BD2-41BE-8A18-ACB5B7BFBC5A-336-0000BCDD153A08F7/v2-c1976e9a3eb21e18fe4a504c671bb268_hd.jpg]<br><a href="https://zhuanlan.zhihu.com/p/44176534" target="_blank" rel="noopener">RabbitMQ必备核心知识 - 知乎</a></p><h2 id="TOO-MANY-QUEUED-MESSAGES"><a href="#TOO-MANY-QUEUED-MESSAGES" class="headerlink" title="TOO MANY QUEUED MESSAGES"></a>TOO MANY QUEUED MESSAGES</h2><p><a href="https://www.cloudamqp.com/blog/2016-01-25-identify-and-protect-against-high-cpu-and-memory-usage.html" target="_blank" rel="noopener">How to handle and avoid high CPU or Memory usage - CloudAMQP</a></p><pre class="line-numbers language-python"><code class="language-python">app<span class="token punctuation">.</span>conf<span class="token punctuation">.</span>result_expires <span class="token operator">=</span> <span class="token number">600</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> rabbitmq </tag>
+            
+            <tag> mq </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>linux shell 编程</title>
+      <link href="/2020/01/22/linux-shell-bian-cheng/"/>
+      <url>/2020/01/22/linux-shell-bian-cheng/</url>
+      
+        <content type="html"><![CDATA[<script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> linux </tag>
+            
+            <tag> shell </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>http 缓存机制</title>
+      <link href="/2020/01/22/http-huan-cun-ji-zhi/"/>
+      <url>/2020/01/22/http-huan-cun-ji-zhi/</url>
+      
+        <content type="html"><![CDATA[<script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> http </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>golang 项目结构</title>
+      <link href="/2020/01/22/golang-xiang-mu-jie-gou/"/>
+      <url>/2020/01/22/golang-xiang-mu-jie-gou/</url>
+      
+        <content type="html"><![CDATA[<script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> golang </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>golang field tag</title>
+      <link href="/2020/01/22/golang-field-tag/"/>
+      <url>/2020/01/22/golang-field-tag/</url>
+      
+        <content type="html"><![CDATA[<script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> golang </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> golang </tag>
+            
+            <tag> field-tag </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>golang grpc</title>
+      <link href="/2020/01/22/golang-grpc/"/>
+      <url>/2020/01/22/golang-grpc/</url>
+      
+        <content type="html"><![CDATA[<script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> golang </category>
+          
+          <category> rpc </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> golang </tag>
+            
+            <tag> rpc </tag>
+            
+            <tag> grpc </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>golang 包管理</title>
+      <link href="/2020/01/22/golang-bao-guan-li/"/>
+      <url>/2020/01/22/golang-bao-guan-li/</url>
+      
+        <content type="html"><![CDATA[<script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> golang </category>
+          
+          <category> package-manager </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> golang </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>golang 条件编译</title>
+      <link href="/2020/01/22/golang-tiao-jian-bian-yi/"/>
+      <url>/2020/01/22/golang-tiao-jian-bian-yi/</url>
+      
+        <content type="html"><![CDATA[<script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> golang </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>golang 网络模型 </title>
+      <link href="/2020/01/22/golang-wang-luo-mo-xing/"/>
+      <url>/2020/01/22/golang-wang-luo-mo-xing/</url>
+      
+        <content type="html"><![CDATA[<script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> golang </tag>
+            
+            <tag> network </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>golang 并发 </title>
+      <link href="/2020/01/22/golang-bing-fa/"/>
+      <url>/2020/01/22/golang-bing-fa/</url>
+      
+        <content type="html"><![CDATA[<script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> golang </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>golang 基础语法</title>
+      <link href="/2020/01/22/golang-ji-chu-yu-fa/"/>
+      <url>/2020/01/22/golang-ji-chu-yu-fa/</url>
+      
+        <content type="html"><![CDATA[<script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> golang </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>nginx 全局变量</title>
+      <link href="/2020/01/22/nginx-quan-ju-bian-liang/"/>
+      <url>/2020/01/22/nginx-quan-ju-bian-liang/</url>
+      
+        <content type="html"><![CDATA[<script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>nginx map</title>
+      <link href="/2020/01/22/nginx-map/"/>
+      <url>/2020/01/22/nginx-map/</url>
+      
+        <content type="html"><![CDATA[<script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> nginx </tag>
+            
+            <tag> map </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>容器基础命令</title>
+      <link href="/2020/01/22/rong-qi-ji-chu-ming-ling/"/>
+      <url>/2020/01/22/rong-qi-ji-chu-ming-ling/</url>
+      
+        <content type="html"><![CDATA[<script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> docker </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hello World</title>
       <link href="/2020/01/21/hello-world/"/>
       <url>/2020/01/21/hello-world/</url>
@@ -11,6 +599,130 @@
         <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
       
       
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>容器多阶段构建</title>
+      <link href="/2019/11/22/rong-qi-jing-xiang-da-xiao-you-hua/"/>
+      <url>/2019/11/22/rong-qi-jing-xiang-da-xiao-you-hua/</url>
+      
+        <content type="html"><![CDATA[<script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> docker </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>内网穿透</title>
+      <link href="/2019/05/22/nei-wang-chuan-tou/"/>
+      <url>/2019/05/22/nei-wang-chuan-tou/</url>
+      
+        <content type="html"><![CDATA[<h1 id="内网机器连接方案"><a href="#内网机器连接方案" class="headerlink" title="内网机器连接方案"></a>内网机器连接方案</h1><p>#ssh/ssh #ssh/proxy  #ssh/nps</p><p>目前有个需求，前置条件是：拥有三台机器，两台MAC分别位于独立的两个内网，命名A 、C，一台aliyun ubuntu拥有公网IP，命名B。要求：实现A、C连接(直接、间接都可)。</p><h2 id="最简单的方案"><a href="#最简单的方案" class="headerlink" title="最简单的方案"></a>最简单的方案</h2><p>最简单的方案是A、C机器上都安装teamviewer软件，可通过gui方式连接操作，B机器都不需要。</p><h2 id="方案二-ssh直连"><a href="#方案二-ssh直连" class="headerlink" title="方案二 ssh直连"></a>方案二 ssh直连</h2><p>ssh直连方案需要通过运行在B服务器上的nps <a href="https://github.com/cnlh/nps" target="_blank" rel="noopener">https://github.com/cnlh/nps</a> 做流量转发。</p><p>nps的搭建以及如何在C机器搭建客户端教程可以参考视频 <a href="https://www.youtube.com/watch?v=jdVQQQacPj4" target="_blank" rel="noopener">https://www.youtube.com/watch?v=jdVQQQacPj4</a> 和nps主页。<br>待搭建好后，需要在nps web控制面板建立客户端和tcp隧道。<br>客户端<br>[image:448411D4-C1EF-4605-AD09-9358FCC45C0A-28301-000056580C0EDC4F/9706EAAB-0413-4E2B-B037-0531817696B3.png]<br>tcp隧道<br>[image:DD12165F-E750-4C32-946B-4BF2725DF174-28301-0000565BC45299BB/FE3DA8BE-36D0-4E7E-BCBF-C518ECE5DE70.png]</p><p>在C机器上运行npc 客户端后，  nps web 面板上的 client list和tcp隧道中 status字段会显示为 online<br>[image:65609A46-84C5-47DC-830D-4D7D816865EE-1543-00001CB6AB101FD0/4FF1E3BE-C3B6-4C04-ABD2-46907A3014CF.png]<br>[image:42E86297-7893-4BE2-AA49-AF3ADF52C1CA-1543-00001CB916C3D379/BEE3CD15-6229-4AFF-A2F8-EA0A67C704D6.png]</p><p>确认online后，就可以在A机器上执行ssh 连接到C机器了。<br>命令为</p><pre class="line-numbers language-shell"><code class="language-shell">ssh C-username@B-ip -p B-port <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>后续通过ssh-copy-id  把A机器公钥拷贝到C机器，并配置好A机器 ssh config ，就可以使用host名来访问如下:</p><pre><code>Host test    HostName ip    User username    Port port</code></pre><h2 id="方案三-A-gt-B-gt-C间接连接"><a href="#方案三-A-gt-B-gt-C间接连接" class="headerlink" title="方案三 A->B->C间接连接"></a>方案三 A-&gt;B-&gt;C间接连接</h2><p>方案二间接连接方案在A-&gt;B过程也有两个可选方案：</p><ul><li>第一是 vnc + fvwm, A通过vnc 连接到B服务器，在B服务器上开启fvwm图形化界面服务保持会话</li><li>第二种方案是, A通过ssh 连接到B服务器，在B服务器上开启tmux命令行保持会话。<br>A-&gt;B连接完成后, 我们需要通过ssh的 reverse ssh tunneling来建立 B-&gt;C连接.<br>具体步骤和说明我们可以参考<a href="https://www.howtoforge.com/reverse-ssh-tunneling" target="_blank" rel="noopener">Reverse SSH Tunneling</a><br>在C 机器上执行 命令，表示把C端11111端口和B端11111端口映射起来<pre class="line-numbers language-shell"><code class="language-shell">ssh -Ng -R 11111:127.0.0.1:11111 C-username@C-ip<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li></ul><p>在B机器上执行，其中username为C机器登录用户名</p><pre class="line-numbers language-shell"><code class="language-shell"> ssh C-username@localhost -p 11111<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>当执行完此命令后，不出意外，你就可以在B机器上登录到C上进行操作，由于上一步骤完成了A-&gt;B的连接，因此此步骤可算间接完成了A-&gt;C连接。</p><p>两个方案要注意的地方：<br>1、B服务器上需要的端口需要开放出来，无论是防火墙还是云服务的端口限制。由于我的B服务器是在阿里云，所以我事先在阿里云上开放出来了我需要的端口。<br>2、C端需要开放远程连接权限，由于我的C端机器是Mac电脑，所以事前开放了该权限，具体步骤:<br>1 打开系统偏好设置<br>[image:E25EF1D1-4BCC-404E-BC81-EE80F8D6F0E0-31099-0000306B40465498/07B13480-0F4F-444A-8790-FC1A304E8F34.png]</p><p>2 点击共享</p><p>[image:2137F239-E4F3-4B54-8EED-19272A74A164-31099-0000306EC177A4D0/C04EC7E0-7B27-40AB-9758-CC4B3691121C.png]<br>3 开启远程登录权限</p><p>[image:78A636D9-573F-4FAF-9DF6-EE8F75D0B003-31099-00003075185BFDDA/3284E50D-4473-4EF8-9B14-BC1498672F17.png]<br>。</p><p>至此，机器连接方案 实验圆满成功。 </p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> proxy </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>celery 一窥</title>
+      <link href="/2019/03/22/celery-yi-kui/"/>
+      <url>/2019/03/22/celery-yi-kui/</url>
+      
+        <content type="html"><![CDATA[<script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> scheduler </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> python </tag>
+            
+            <tag> celery </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>ssh 之 sshfs</title>
+      <link href="/2019/01/22/ssh-zhi-sshfs/"/>
+      <url>/2019/01/22/ssh-zhi-sshfs/</url>
+      
+        <content type="html"><![CDATA[<h1 id="sshfs"><a href="#sshfs" class="headerlink" title="sshfs"></a>sshfs</h1><p>#ssh/sshfs</p><p>SSHFS 顾名思义，走的是 SSH 的通道。而且挂载的时候，远程服务器啥都不用动，只需要客户端安装 SSHFS 就可以，并且挂载就一行命令搞定，非常方便。</p><h2 id="ubuntu-debian"><a href="#ubuntu-debian" class="headerlink" title="ubuntu/debian"></a>ubuntu/debian</h2><p>SSHFS is Linux based software that needs to be installed on your local computer. On Ubuntu and Debian based systems it can be installed through apt-get.</p><pre class="line-numbers language-shell"><code class="language-shell">sudo apt-get install sshfs<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h2 id="macOS"><a href="#macOS" class="headerlink" title="macOS"></a>macOS</h2><p>You can install SSHFS on Mac OSX. You will need to download FUSE and SSHFS from the  <a href="http://osxfuse.github.io/" target="_blank" rel="noopener">osxfuse site</a> </p><h2 id="windows"><a href="#windows" class="headerlink" title="windows"></a>windows</h2><p>To install SSHFS in Windows you will need to grab the latest win-sshfs package from the google code repository. A direct download link can be found below. After you have downloaded the package, double click to launch the installer. You may be prompted to download additional files, if so the installer will download the .NET Framework 4.0 and install it for you.</p><h2 id="sshfs-cmd"><a href="#sshfs-cmd" class="headerlink" title="sshfs cmd"></a>sshfs cmd</h2><h3 id="mount-path"><a href="#mount-path" class="headerlink" title="mount path"></a>mount path</h3><pre><code>sshfs username@remote_ip:/remote_path /local_path</code></pre><h3 id="unmount-path"><a href="#unmount-path" class="headerlink" title="unmount path"></a>unmount path</h3><pre><code># oksudo diskutil unmount force /path# bad # kill -9 $(ps -ax | grep "sshfs" | awk '{ print $1 }')</code></pre><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> ssh </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>ssh 端口代理</title>
+      <link href="/2019/01/22/ssh-duan-kou-dai-li/"/>
+      <url>/2019/01/22/ssh-duan-kou-dai-li/</url>
+      
+        <content type="html"><![CDATA[<h1 id="ssh-端口转发"><a href="#ssh-端口转发" class="headerlink" title="ssh 端口转发"></a>ssh 端口转发</h1><p>#ssh/proxy</p><pre class="line-numbers language-shell"><code class="language-shell">ssh -qTfnN -D 9920 root@jp #不够稳定ssh -g -N -D 9920 root@jp # 稳定ssh -qTfnN -D 1087 tuwenyoung@gcp1curl --proxy socks5://127.0.0.1:9920 ip.gscurl --proxy socks5://127.0.0.1:1087 ip.gs<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><pre class="line-numbers language-man"><code class="language-man">    -C  压缩数据传输    -f  后台登录用户名密码    -N  不执行shell[与 -g 合用]    -g  允许打开的端口让远程主机访问            -L  本地端口转发    -R  远程端口转发    -p  ssh 端口<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><pre class="line-numbers language-shell"><code class="language-shell">export http_proxy=http://127.0.0.1:1087;export https_proxy=http://127.0.0.1:1087;export http_proxy=http://127.0.0.1:9920;export https_proxy=http://127.0.0.1:9920;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><p>SSH有三种端口转发模式</p><ul><li>本地端口转发(Local Port Forwarding).   将发送到本地端口的请求，转发到目标远程主机的特定端口 （本地访问远程）<pre class="line-numbers language-shell"><code class="language-shell">ssh -C -f -N -g -L local_host:local_port:remote_host:remote_local_port user@remotehost<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li></ul><p>ssh -C -f -N -g -L 15672:127.0.0.1:15672 root@tmp-worker</p><p>ssh -N -g -L 54321:127.0.0.1:5432 root@ageeye</p><p>ssh -N -g -L 8529:127.0.0.1:8529 root@ageeye</p><p>ssh -N -g -L 11111:127.0.0.1:11111 root@tmp-worker</p><p>ssh -N -g -L 9999:127.0.0.1:9999 tuwenyoung@gcp1</p><p>ssh -N -g -L 8005:127.0.0.1:8005 beyouth@newgis</p><p>ssh -N -g -L 3000:127.0.0.1:3000 root@tmp-worker</p><p>ssh -N -g -L 5555:127.0.0.1:5555 root@tmp-worker<br>ssh -N -g -L 15672:127.0.0.1:15672 root@tmp-worker<br>ssh -N -g -L 15673:127.0.0.1:15672 root@tmp-worker</p><p>ssh -N -g -L 5433:127.0.0.1:5433 root@sleuth</p><p>ssh -N -g -L 8989:127.0.0.1:8989 zhexing@imac</p><p>ssh -N -g -L 3306:10.5.192.249:3306 imac</p><p>ssh -N -g -L 27017:127.0.0.1: 27017 root@xoss-dev</p><p>ssh -N -g -L 3307:127.0.0.1:3307 <a href="mailto:ellen@10.5.192.40">ellen@10.5.192.40</a></p><p>ssh -N -g -L 8001:127.0.0.1:80 <a href="mailto:ellen@10.5.192.40">ellen@10.5.192.40</a></p><p>ssh -N -g -L 9001:127.0.0.1:9001 newgis</p><p>ssh -N -g -L 8001:127.0.0.1:8989 mapserver</p><p>ssh -N -g -L 8000:127.0.0.1:8000 ageeye</p><pre><code>* 远程端口转发(Remote Port Forwarding)  将远程主机发送到特定端口的请求，转发到目标主机特定的端口 （远程访问本地）```shellssh —N g -R 11111:127.0.0.1:11111 tuwenyoung@gcp1ssh —N g -R 8088:127.0.0.1:8088 shssh —N g -R 8088:127.0.0.1:8088 xingzhe@139.196.77.60 -p 8001</code></pre><ul><li>动态端口转发(Dynamic Port Forwarding)<br>  一方面，由于防火墙限制，本地主机A1并不能直接访问远程云主机B1上的服务，因此需要进行端口转发；另一方面，为每个端口分别创建本地端口转发非常麻烦。</li></ul><p>对于本地端口转发和远程端口转发，都存在两个一一对应的端口，分别位于SSH的客户端和服务端，而动态端口转发则只是绑定了一个本地端口，而目标地址:目标端口则是不固定的。目标地址:目标端口是由发起的请求决定的，比如，请求地址为192.168.1.100:3000，则通过SSH转发的请求地址也是192.168.1.100:3000。</p><p><a href="https://blog.fundebug.com/2017/04/24/ssh-port-forwarding/" target="_blank" rel="noopener">玩转SSH端口转发 | Fundebug博客</a></p><p><a href="https://blog.devolutions.net/2017/3/what-is-reverse-ssh-port-forwarding" target="_blank" rel="noopener">What is Reverse SSH Port Forwarding - The Devolutions Blog</a></p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> ssh </tag>
+            
+            <tag> proxy </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>ssh proxy</title>
+      <link href="/2019/01/22/ssh-proxy/"/>
+      <url>/2019/01/22/ssh-proxy/</url>
+      
+        <content type="html"><![CDATA[<h1 id="ssh-端口转发"><a href="#ssh-端口转发" class="headerlink" title="ssh 端口转发"></a>ssh 端口转发</h1><p>#ssh/proxy</p><pre class="line-numbers language-shell"><code class="language-shell">ssh -qTfnN -D 9920 root@jp #不够稳定ssh -g -N -D 9920 root@jp # 稳定ssh -qTfnN -D 1087 tuwenyoung@gcp1curl --proxy socks5://127.0.0.1:9920 ip.gscurl --proxy socks5://127.0.0.1:1087 ip.gs<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><pre class="line-numbers language-man"><code class="language-man">    -C  压缩数据传输    -f  后台登录用户名密码    -N  不执行shell[与 -g 合用]    -g  允许打开的端口让远程主机访问            -L  本地端口转发    -R  远程端口转发    -p  ssh 端口<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><pre class="line-numbers language-shell"><code class="language-shell">export http_proxy=http://127.0.0.1:1087;export https_proxy=http://127.0.0.1:1087;export http_proxy=http://127.0.0.1:9920;export https_proxy=http://127.0.0.1:9920;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><p>SSH有三种端口转发模式</p><ul><li>本地端口转发(Local Port Forwarding).   将发送到本地端口的请求，转发到目标远程主机的特定端口 （本地访问远程）<pre class="line-numbers language-shell"><code class="language-shell">ssh -C -f -N -g -L local_host:local_port:remote_host:remote_local_port user@remotehost<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li></ul><p>ssh -C -f -N -g -L 15672:127.0.0.1:15672 root@tmp-worker</p><p>ssh -N -g -L 54321:127.0.0.1:5432 root@ageeye</p><p>ssh -N -g -L 8529:127.0.0.1:8529 root@ageeye</p><p>ssh -N -g -L 11111:127.0.0.1:11111 root@tmp-worker</p><p>ssh -N -g -L 9999:127.0.0.1:9999 tuwenyoung@gcp1</p><p>ssh -N -g -L 8005:127.0.0.1:8005 beyouth@newgis</p><p>ssh -N -g -L 3000:127.0.0.1:3000 root@tmp-worker</p><p>ssh -N -g -L 5555:127.0.0.1:5555 root@tmp-worker<br>ssh -N -g -L 15672:127.0.0.1:15672 root@tmp-worker<br>ssh -N -g -L 15673:127.0.0.1:15672 root@tmp-worker</p><p>ssh -N -g -L 5433:127.0.0.1:5433 root@sleuth</p><p>ssh -N -g -L 8989:127.0.0.1:8989 zhexing@imac</p><p>ssh -N -g -L 3306:10.5.192.249:3306 imac</p><p>ssh -N -g -L 27017:127.0.0.1: 27017 root@xoss-dev</p><p>ssh -N -g -L 3307:127.0.0.1:3307 <a href="mailto:ellen@10.5.192.40">ellen@10.5.192.40</a></p><p>ssh -N -g -L 8001:127.0.0.1:80 <a href="mailto:ellen@10.5.192.40">ellen@10.5.192.40</a></p><p>ssh -N -g -L 9001:127.0.0.1:9001 newgis</p><p>ssh -N -g -L 8001:127.0.0.1:8989 mapserver</p><p>ssh -N -g -L 8000:127.0.0.1:8000 ageeye</p><pre><code>* 远程端口转发(Remote Port Forwarding)  将远程主机发送到特定端口的请求，转发到目标主机特定的端口 （远程访问本地）```shellssh —N g -R 11111:127.0.0.1:11111 tuwenyoung@gcp1ssh —N g -R 8088:127.0.0.1:8088 shssh —N g -R 8088:127.0.0.1:8088 xingzhe@139.196.77.60 -p 8001</code></pre><ul><li>动态端口转发(Dynamic Port Forwarding)<br>  一方面，由于防火墙限制，本地主机A1并不能直接访问远程云主机B1上的服务，因此需要进行端口转发；另一方面，为每个端口分别创建本地端口转发非常麻烦。</li></ul><p>对于本地端口转发和远程端口转发，都存在两个一一对应的端口，分别位于SSH的客户端和服务端，而动态端口转发则只是绑定了一个本地端口，而目标地址:目标端口则是不固定的。目标地址:目标端口是由发起的请求决定的，比如，请求地址为192.168.1.100:3000，则通过SSH转发的请求地址也是192.168.1.100:3000。</p><p><a href="https://blog.fundebug.com/2017/04/24/ssh-port-forwarding/" target="_blank" rel="noopener">玩转SSH端口转发 | Fundebug博客</a></p><p><a href="https://blog.devolutions.net/2017/3/what-is-reverse-ssh-port-forwarding" target="_blank" rel="noopener">What is Reverse SSH Port Forwarding - The Devolutions Blog</a></p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> ssh </tag>
+            
+        </tags>
       
     </entry>
     
