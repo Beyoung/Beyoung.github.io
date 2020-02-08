@@ -5,10 +5,16 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="golang 条件编译, gis python golang ">
-    <meta name="description" content="
-        document.querySelectorAll(&#39;.github-emoji&#39;)
-          .forEach(el =&gt; {
-            if (!el.dataset.src) { return">
+    <meta name="description" content="标签编译// +build !jsoniter
+
+package json
+
+import (
+    &#34;encoding/json&#34;
+    &#34;fmt&#34;
+)
+
+func MarshalIndent(v interface{}, prefi">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -327,6 +333,10 @@
                                 <span class="chip bg-color">golang</span>
                             </a>
                         
+                            <a href="/tags/compile/">
+                                <span class="chip bg-color">compile</span>
+                            </a>
+                        
                     </div>
                     
                 </div>
@@ -348,14 +358,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    52
+                    518
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    2 分
                 </div>
                 
 
@@ -371,7 +381,49 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <script>
+                <h2 id="标签编译"><a href="#标签编译" class="headerlink" title="标签编译"></a>标签编译</h2><pre class="line-numbers language-go"><code class="language-go"><span class="token comment" spellcheck="true">// +build !jsoniter</span>
+
+<span class="token keyword">package</span> json
+
+<span class="token keyword">import</span> <span class="token punctuation">(</span>
+    <span class="token string">"encoding/json"</span>
+    <span class="token string">"fmt"</span>
+<span class="token punctuation">)</span>
+
+<span class="token keyword">func</span> <span class="token function">MarshalIndent</span><span class="token punctuation">(</span>v <span class="token keyword">interface</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span> prefix<span class="token punctuation">,</span> indent <span class="token builtin">string</span><span class="token punctuation">)</span> <span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token builtin">byte</span><span class="token punctuation">,</span> <span class="token builtin">error</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    fmt<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span><span class="token string">"Use [encoding/json] package"</span><span class="token punctuation">)</span>
+    <span class="token keyword">return</span> json<span class="token punctuation">.</span><span class="token function">MarshalIndent</span><span class="token punctuation">(</span>v<span class="token punctuation">,</span>prefix<span class="token punctuation">,</span>indent<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-go"><code class="language-go"><span class="token comment" spellcheck="true">// +build jsoniter</span>
+
+<span class="token keyword">package</span> json
+
+<span class="token keyword">import</span> <span class="token punctuation">(</span>
+    <span class="token string">"fmt"</span>
+    <span class="token string">"github.com/json-iterator/go"</span>
+<span class="token punctuation">)</span>
+
+<span class="token keyword">var</span> <span class="token punctuation">(</span>
+    json <span class="token operator">=</span> jsoniter<span class="token punctuation">.</span>ConfigCompatibleWithStandardLibrary
+<span class="token punctuation">)</span>
+
+<span class="token keyword">func</span> <span class="token function">MarshalIndent</span><span class="token punctuation">(</span>v <span class="token keyword">interface</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span> prefix<span class="token punctuation">,</span> indent <span class="token builtin">string</span><span class="token punctuation">)</span> <span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token builtin">byte</span><span class="token punctuation">,</span> <span class="token builtin">error</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    fmt<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span><span class="token string">"Use [jsoniter] package"</span><span class="token punctuation">)</span>
+    <span class="token keyword">return</span> json<span class="token punctuation">.</span><span class="token function">MarshalIndent</span><span class="token punctuation">(</span>v<span class="token punctuation">,</span>prefix<span class="token punctuation">,</span>indent<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>我们发现，条件编译的关键在于-tags=jsoniter,也就是-tags这个标志，这就是Go语言为我们提供的条件编译的方式之一。<br>好了，回过头来看我们刚开始时json/json.go、json/jsoniter.go这两个Go文件的顶部，都有一行注释：</p>
+<pre class="line-numbers language-go"><code class="language-go"><span class="token comment" spellcheck="true">// +build !jsoniter</span>
+
+<span class="token comment" spellcheck="true">// +build jsoniter</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<p>这两行是Go语言条件编译的关键。+build可以理解为条件编译tags的声明关键字，后面跟着tags的条件。<br>// +build !jsoniter表示，tags不是jsoniter的时候编译这个Go文件。 // +build jsoniter表示，tags是jsoniter的时候编译这个Go文件。<br>也就是说，这两种条件是互斥的，只有当tags=jsoniter的时候，才会使用json-iterator，其他情况使用encoding/json。</p>
+<h2 id="后缀编译"><a href="#后缀编译" class="headerlink" title="后缀编译"></a>后缀编译</h2><p>使用这种方案比编译标签要简单，go/build可以在不读取源文件的情况下就可以决定哪些文件不需要参加编译。文件命名约定可以在go/build包里找到详细的说明，简单来说如果你的源文件包含后缀：<em>$GOOS.go，那么这个源文件只会在这个平台下编译, _$GOARCH.go也是如此。 这两个后缀可以结合在一起使用，顺序只能为：</em>$GOOS_$GOARCH.go</p>
+<pre class="line-numbers language-shell"><code class="language-shell"> mypkg_freebsd_arm.go // only builds on freebsd/arm systems  
+ mypkg_plan9.go       // only builds on plan9  <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p>源文件不能只提供条件编译后缀，还必须有文件名，_linux.go、_freebsd_386.go 这两个源文件在所有的平台下都会被忽略掉，因为<strong>go/build将会忽略所有以下划线或者点开头的源文件</strong> 。</p>
+<script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
@@ -454,6 +506,10 @@
                             
                                 <a href="/tags/golang/">
                                     <span class="chip bg-color">golang</span>
+                                </a>
+                            
+                                <a href="/tags/compile/">
+                                    <span class="chip bg-color">compile</span>
                                 </a>
                             
                         </div>
@@ -805,7 +861,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">6.9k</span>&nbsp;字
+                class="white-color">8.7k</span>&nbsp;字
             
             
             

@@ -27,11 +27,11 @@
     
     
     <entry>
-      <title>redis 过期策略与淘汰机制</title>
+      <title>redis 过期策略、淘汰机制、持久化</title>
       <link href="/2020/01/25/redis-guo-qi-ce-lue-yu-tao-tai-ji-zhi/"/>
       <url>/2020/01/25/redis-guo-qi-ce-lue-yu-tao-tai-ji-zhi/</url>
       
-        <content type="html"><![CDATA[<script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+        <content type="html"><![CDATA[<h2 id="过期策略"><a href="#过期策略" class="headerlink" title="过期策略"></a>过期策略</h2><h3 id="定期删除"><a href="#定期删除" class="headerlink" title="定期删除"></a>定期删除</h3><h3 id="惰性删除"><a href="#惰性删除" class="headerlink" title="惰性删除"></a>惰性删除</h3><h2 id="内存淘汰机制"><a href="#内存淘汰机制" class="headerlink" title="内存淘汰机制"></a>内存淘汰机制</h2><ul><li>noeviction：当内存不足以容纳新写入数据时，新写入操作会报错。默认策略</li><li>allkeys-lru：当内存不足以容纳新写入数据时，在键空间中，移除最近最少使用的key。</li><li>allkeys-random：当内存不足以容纳新写入数据时，在键空间中，随机移除某个key。</li><li>volatile-lru：当内存不足以容纳新写入数据时，在设置了过期时间的键空间中，移除最近最少使用的key。</li><li>volatile-random：当内存不足以容纳新写入数据时，在设置了过期时间的键空间中，随机移除某个key。</li><li>volatile-ttl：当内存不足以容纳新写入数据时，在设置了过期时间的键空间中，有更早过期时间的key优先移除。</li></ul><h3 id="持久化"><a href="#持久化" class="headerlink" title="持久化"></a>持久化</h3><h3 id="RDB"><a href="#RDB" class="headerlink" title="RDB"></a>RDB</h3><h3 id="AOF"><a href="#AOF" class="headerlink" title="AOF"></a>AOF</h3><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
       
       
       
@@ -78,9 +78,19 @@
       <link href="/2020/01/25/tile38-geospatial-kong-jian-fen-xi/"/>
       <url>/2020/01/25/tile38-geospatial-kong-jian-fen-xi/</url>
       
-        <content type="html"><![CDATA[<script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+        <content type="html"><![CDATA[<h2 id="what-is-tile38"><a href="#what-is-tile38" class="headerlink" title="what is tile38"></a>what is tile38</h2><p>Tile38 features a high-performance spatial indexing engine. It supports a variety of object types including lat/lon points, bounding boxes, xyz tiles, geohashes, and geojson.<br>Includes operations like Intersects, Within, Nearby, and Static &amp; Roaming Geofencing.</p><ul><li>Ultra Fast Geospatial Database &amp; Geofencing Server</li><li>Real-time Geofencing</li><li>Fast Spatial Index</li><li>Automated Events</li></ul><h2 id="installation"><a href="#installation" class="headerlink" title="installation"></a>installation</h2><h3 id="docker"><a href="#docker" class="headerlink" title="docker"></a>docker</h3><pre class="line-numbers language-shell"><code class="language-shell">docker pull tile38/tile38docker run -p 9851:9851 tile38/tile38<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><h3 id="macos"><a href="#macos" class="headerlink" title="macos"></a>macos</h3><pre class="line-numbers language-shell"><code class="language-shell">brew install tile38tile38-server<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><h3 id="ubuntu-debian"><a href="#ubuntu-debian" class="headerlink" title="ubuntu / debian"></a>ubuntu / debian</h3><pre class="line-numbers language-shell"><code class="language-shell">apt install tile38tile38-server<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><h3 id="Release-Builds"><a href="#Release-Builds" class="headerlink" title="Release Builds"></a>Release Builds</h3><p>Tile38 has pre-built release binaries for OSX, Linux, FreeBSD, and Windows.<br>Instructions for using these binaries are on the GitHub <a href="https://github.com/tidwall/tile38/releases" target="_blank" rel="noopener">releases page</a>.</p><h3 id="connect-tile38-server"><a href="#connect-tile38-server" class="headerlink" title="connect tile38 server"></a>connect tile38 server</h3><pre class="line-numbers language-shell"><code class="language-shell">tile38-cli# tile38> SET fleet truck1 POINT 33.5123 -112.2693# tile38> GET fleet truck1<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><h2 id="Tile38-commands"><a href="#Tile38-commands" class="headerlink" title="Tile38 commands"></a>Tile38 commands</h2><h3 id="Search"><a href="#Search" class="headerlink" title="Search"></a>Search</h3><h3 id="Keys"><a href="#Keys" class="headerlink" title="Keys"></a>Keys</h3><h3 id="Webhooks"><a href="#Webhooks" class="headerlink" title="Webhooks"></a>Webhooks</h3><h3 id="Channels"><a href="#Channels" class="headerlink" title="Channels"></a>Channels</h3><h3 id="Connection"><a href="#Connection" class="headerlink" title="Connection"></a>Connection</h3><h3 id="Replication"><a href="#Replication" class="headerlink" title="Replication"></a>Replication</h3><h3 id="Scripting"><a href="#Scripting" class="headerlink" title="Scripting"></a>Scripting</h3><h3 id="Server"><a href="#Server" class="headerlink" title="Server"></a>Server</h3><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
       
       
+      
+        <tags>
+            
+            <tag> golang </tag>
+            
+            <tag> tile38 </tag>
+            
+            <tag> geo </tag>
+            
+        </tags>
       
     </entry>
     
@@ -154,9 +164,9 @@
       
         <tags>
             
-            <tag> http </tag>
+            <tag> Protocol </tag>
             
-            <tag> protocol </tag>
+            <tag> Http </tag>
             
         </tags>
       
@@ -212,25 +222,6 @@
             <tag> redis </tag>
             
             <tag> nosql </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>序列化 一</title>
-      <link href="/2020/01/22/xu-lie-hua-yi/"/>
-      <url>/2020/01/22/xu-lie-hua-yi/</url>
-      
-        <content type="html"><![CDATA[<script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> serializer </tag>
             
         </tags>
       
@@ -384,13 +375,15 @@
       <link href="/2020/01/22/golang-xiang-mu-jie-gou/"/>
       <url>/2020/01/22/golang-xiang-mu-jie-gou/</url>
       
-        <content type="html"><![CDATA[<script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+        <content type="html"><![CDATA[<p>Go 没有对项目的 layout 有硬性规定，也没有官方版本的 best practice，所以社区内部有几种不同的实践方式，可根据自身需求自行参考。</p><h2 id="参考方案"><a href="#参考方案" class="headerlink" title="参考方案"></a>参考方案</h2><p>根据社区 <a href="https://github.com/golang-standards/project-layout" target="_blank" rel="noopener">Standard Go Project Layout</a> 提出的方案，我们可以将一个 Go Project 划分成以下几大目录：</p><h2 id="go-目录"><a href="#go-目录" class="headerlink" title="go 目录"></a>go 目录</h2><h3 id="cmd"><a href="#cmd" class="headerlink" title="/cmd"></a>/cmd</h3><p>Main applications for this project.  </p><h3 id="internal"><a href="#internal" class="headerlink" title="/internal"></a>/internal</h3><p>Private application and library code.</p><h3 id="pkg"><a href="#pkg" class="headerlink" title="/pkg"></a>/pkg</h3><p>Library code that’s ok to use by external applications</p><h3 id="vendor"><a href="#vendor" class="headerlink" title="/vendor"></a>/vendor</h3><p>Application dependencies (managed manually or by your favorite dependency management tool like <a href="https://github.com/golang/dep" target="_blank" rel="noopener">dep</a> ).</p><h2 id="应用服务目录"><a href="#应用服务目录" class="headerlink" title="应用服务目录"></a>应用服务目录</h2><h3 id="api"><a href="#api" class="headerlink" title="/api"></a>/api</h3><p>OpenAPI/Swagger specs, JSON schema files, protocol definition files.<br>See the <a href="https://github.com/golang-standards/project-layout/blob/master/api/README.md" target="_blank" rel="noopener">/api</a> directory for examples.</p><h2 id="web应用目录"><a href="#web应用目录" class="headerlink" title="web应用目录"></a>web应用目录</h2><h3 id="web"><a href="#web" class="headerlink" title="/web"></a>/web</h3><p>Web application specific components: static web assets, server side templates and SPAs.</p><h2 id="公共应用目录"><a href="#公共应用目录" class="headerlink" title="公共应用目录"></a>公共应用目录</h2><h3 id="configs"><a href="#configs" class="headerlink" title="/configs"></a>/configs</h3><p>Configuration file templates or default configs.</p><h3 id="init"><a href="#init" class="headerlink" title="/init"></a>/init</h3><p>System init (systemd, upstart, sysv) and process manager/supervisor (runit, supervisord) configs.</p><h3 id="scripts"><a href="#scripts" class="headerlink" title="/scripts"></a>/scripts</h3><p>Scripts to perform various build, install, analysis, etc operations.</p><h3 id="build"><a href="#build" class="headerlink" title="/build"></a>/build</h3><p>Packaging and Continuous Integration.</p><h3 id="deployments"><a href="#deployments" class="headerlink" title="/deployments"></a>/deployments</h3><p>IaaS, PaaS, system and container orchestration deployment configurations and templates (docker-compose, kubernetes/helm, mesos, terraform, bosh).</p><h3 id="test"><a href="#test" class="headerlink" title="/test"></a>/test</h3><p>Additional external test apps and test data.</p><h2 id="其他目录"><a href="#其他目录" class="headerlink" title="其他目录"></a>其他目录</h2><h3 id="docs"><a href="#docs" class="headerlink" title="/docs"></a>/docs</h3><h3 id="tools"><a href="#tools" class="headerlink" title="/tools"></a>/tools</h3><h3 id="examples"><a href="#examples" class="headerlink" title="/examples"></a>/examples</h3><h3 id="third-party"><a href="#third-party" class="headerlink" title="/third_party"></a>/third_party</h3><h3 id="githooks"><a href="#githooks" class="headerlink" title="/githooks"></a>/githooks</h3><h3 id="assets"><a href="#assets" class="headerlink" title="/assets"></a>/assets</h3><h3 id="website"><a href="#website" class="headerlink" title="/website"></a>/website</h3><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
       
       
       
         <tags>
             
             <tag> golang </tag>
+            
+            <tag> project </tag>
             
         </tags>
       
@@ -488,13 +481,15 @@
       <link href="/2020/01/22/golang-tiao-jian-bian-yi/"/>
       <url>/2020/01/22/golang-tiao-jian-bian-yi/</url>
       
-        <content type="html"><![CDATA[<script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+        <content type="html"><![CDATA[<h2 id="标签编译"><a href="#标签编译" class="headerlink" title="标签编译"></a>标签编译</h2><pre class="line-numbers language-go"><code class="language-go"><span class="token comment" spellcheck="true">// +build !jsoniter</span><span class="token keyword">package</span> json<span class="token keyword">import</span> <span class="token punctuation">(</span>    <span class="token string">"encoding/json"</span>    <span class="token string">"fmt"</span><span class="token punctuation">)</span><span class="token keyword">func</span> <span class="token function">MarshalIndent</span><span class="token punctuation">(</span>v <span class="token keyword">interface</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span> prefix<span class="token punctuation">,</span> indent <span class="token builtin">string</span><span class="token punctuation">)</span> <span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token builtin">byte</span><span class="token punctuation">,</span> <span class="token builtin">error</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>    fmt<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span><span class="token string">"Use [encoding/json] package"</span><span class="token punctuation">)</span>    <span class="token keyword">return</span> json<span class="token punctuation">.</span><span class="token function">MarshalIndent</span><span class="token punctuation">(</span>v<span class="token punctuation">,</span>prefix<span class="token punctuation">,</span>indent<span class="token punctuation">)</span><span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><pre class="line-numbers language-go"><code class="language-go"><span class="token comment" spellcheck="true">// +build jsoniter</span><span class="token keyword">package</span> json<span class="token keyword">import</span> <span class="token punctuation">(</span>    <span class="token string">"fmt"</span>    <span class="token string">"github.com/json-iterator/go"</span><span class="token punctuation">)</span><span class="token keyword">var</span> <span class="token punctuation">(</span>    json <span class="token operator">=</span> jsoniter<span class="token punctuation">.</span>ConfigCompatibleWithStandardLibrary<span class="token punctuation">)</span><span class="token keyword">func</span> <span class="token function">MarshalIndent</span><span class="token punctuation">(</span>v <span class="token keyword">interface</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span> prefix<span class="token punctuation">,</span> indent <span class="token builtin">string</span><span class="token punctuation">)</span> <span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token builtin">byte</span><span class="token punctuation">,</span> <span class="token builtin">error</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>    fmt<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span><span class="token string">"Use [jsoniter] package"</span><span class="token punctuation">)</span>    <span class="token keyword">return</span> json<span class="token punctuation">.</span><span class="token function">MarshalIndent</span><span class="token punctuation">(</span>v<span class="token punctuation">,</span>prefix<span class="token punctuation">,</span>indent<span class="token punctuation">)</span><span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>我们发现，条件编译的关键在于-tags=jsoniter,也就是-tags这个标志，这就是Go语言为我们提供的条件编译的方式之一。<br>好了，回过头来看我们刚开始时json/json.go、json/jsoniter.go这两个Go文件的顶部，都有一行注释：</p><pre class="line-numbers language-go"><code class="language-go"><span class="token comment" spellcheck="true">// +build !jsoniter</span><span class="token comment" spellcheck="true">// +build jsoniter</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><p>这两行是Go语言条件编译的关键。+build可以理解为条件编译tags的声明关键字，后面跟着tags的条件。<br>// +build !jsoniter表示，tags不是jsoniter的时候编译这个Go文件。 // +build jsoniter表示，tags是jsoniter的时候编译这个Go文件。<br>也就是说，这两种条件是互斥的，只有当tags=jsoniter的时候，才会使用json-iterator，其他情况使用encoding/json。</p><h2 id="后缀编译"><a href="#后缀编译" class="headerlink" title="后缀编译"></a>后缀编译</h2><p>使用这种方案比编译标签要简单，go/build可以在不读取源文件的情况下就可以决定哪些文件不需要参加编译。文件命名约定可以在go/build包里找到详细的说明，简单来说如果你的源文件包含后缀：<em>$GOOS.go，那么这个源文件只会在这个平台下编译, _$GOARCH.go也是如此。 这两个后缀可以结合在一起使用，顺序只能为：</em>$GOOS_$GOARCH.go</p><pre class="line-numbers language-shell"><code class="language-shell"> mypkg_freebsd_arm.go // only builds on freebsd/arm systems   mypkg_plan9.go       // only builds on plan9  <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p>源文件不能只提供条件编译后缀，还必须有文件名，_linux.go、_freebsd_386.go 这两个源文件在所有的平台下都会被忽略掉，因为<strong>go/build将会忽略所有以下划线或者点开头的源文件</strong> 。</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
       
       
       
         <tags>
             
             <tag> golang </tag>
+            
+            <tag> compile </tag>
             
         </tags>
       
@@ -524,7 +519,7 @@
     
     
     <entry>
-      <title>golang 并发 </title>
+      <title>golang 并发</title>
       <link href="/2020/01/22/golang-bing-fa/"/>
       <url>/2020/01/22/golang-bing-fa/</url>
       
@@ -596,25 +591,6 @@
     
     
     <entry>
-      <title>容器基础命令</title>
-      <link href="/2020/01/22/rong-qi-ji-chu-ming-ling/"/>
-      <url>/2020/01/22/rong-qi-ji-chu-ming-ling/</url>
-      
-        <content type="html"><![CDATA[<script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> docker </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Hello World</title>
       <link href="/2020/01/21/hello-world/"/>
       <url>/2020/01/21/hello-world/</url>
@@ -622,25 +598,6 @@
         <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
       
       
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>容器多阶段构建</title>
-      <link href="/2019/11/22/rong-qi-jing-xiang-da-xiao-you-hua/"/>
-      <url>/2019/11/22/rong-qi-jing-xiang-da-xiao-you-hua/</url>
-      
-        <content type="html"><![CDATA[<script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> docker </tag>
-            
-        </tags>
       
     </entry>
     
@@ -666,25 +623,42 @@
     
     
     <entry>
-      <title>celery 一窥</title>
-      <link href="/2019/03/22/celery-yi-kui/"/>
-      <url>/2019/03/22/celery-yi-kui/</url>
+      <title>RESP 协议浅析</title>
+      <link href="/2019/02/08/resp-xie-yi-qian-xi/"/>
+      <url>/2019/02/08/resp-xie-yi-qian-xi/</url>
       
         <content type="html"><![CDATA[<script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
       
       
-      <categories>
-          
-          <category> scheduler </category>
-          
-      </categories>
+      
+        <tags>
+            
+            <tag> Redis </tag>
+            
+            <tag> Serialization </tag>
+            
+            <tag> Protocol </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Docker镜像大小优化</title>
+      <link href="/2019/01/22/rong-qi-jing-xiang-da-xiao-you-hua/"/>
+      <url>/2019/01/22/rong-qi-jing-xiang-da-xiao-you-hua/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Docker镜像优化原理"><a href="#Docker镜像优化原理" class="headerlink" title="Docker镜像优化原理"></a>Docker镜像优化原理</h2><h2 id="Docker-镜像大小优化的好处"><a href="#Docker-镜像大小优化的好处" class="headerlink" title="Docker 镜像大小优化的好处"></a>Docker 镜像大小优化的好处</h2><ul><li>加快构建/部署. 较小的镜像加快网络传输.</li><li>提高安全性. 镜像越小，无用程序越少，减少被攻击目标.</li><li>减少存储开销</li></ul><h2 id="Docker-镜像大小优化的方法"><a href="#Docker-镜像大小优化的方法" class="headerlink" title="Docker 镜像大小优化的方法"></a>Docker 镜像大小优化的方法</h2><h3 id="选择较小的基础镜像"><a href="#选择较小的基础镜像" class="headerlink" title="选择较小的基础镜像"></a>选择较小的基础镜像</h3><p>从一开始选择较小的基础镜像，起到事半功倍的效果。目前，可选则的基础镜像有：</p><ul><li>Distroless</li><li>Alpine</li><li>Scratch</li><li>Busybox</li></ul><h4 id="Distroless"><a href="#Distroless" class="headerlink" title="Distroless"></a>Distroless</h4><p>Distroless是Google推出的一个仅仅包含运行时环境，不包含包管理器，shell等其他程序。如果你的程序没有其他依赖的话，这是一个不错的选择。</p><h4 id="Alpine"><a href="#Alpine" class="headerlink" title="Alpine"></a>Alpine</h4><p>Alpine 是一个基于MUSL，Busybox的安全的Linux发行版。麻雀虽小五脏俱全，虽然不到10M, 但是包含了一个包管理器和shell环境，这在我们实际的使用调试当中将非常有用。</p><h4 id="Scratch"><a href="#Scratch" class="headerlink" title="Scratch"></a>Scratch</h4><p>Scratch是空白镜像，一般用于基础镜像构建。</p><h4 id="Busybox"><a href="#Busybox" class="headerlink" title="Busybox"></a>Busybox</h4><p><a href="https://hub.docker.com/_/busybox" target="_blank" rel="noopener">https://hub.docker.com/_/busybox</a></p><blockquote><p>基础镜像基础在于缺少一些我们可能需要的工具，因此在选择基础镜像时候需要读者自己斟酌。<br>博主在生产环境下使用的是alpine，曾经在安装 python arrow库时候遇到一些问题，无法通过其apk安装，只得通过源码构建安装。<br>如果你在构建时候遇到什么问题，可以在文章下留言，大家一起探讨。</p></blockquote><h3 id="减少不必要的镜像层，去除不必要文件"><a href="#减少不必要的镜像层，去除不必要文件" class="headerlink" title="减少不必要的镜像层，去除不必要文件"></a>减少不必要的镜像层，去除不必要文件</h3><p>减少不必要的镜像层的诀窍在于使用单行命令<br>去除不必要的文件在于通过.dockerignore 在构建时候把不必要的文件剔除上下文</p><h3 id="docker多阶段构建"><a href="#docker多阶段构建" class="headerlink" title="docker多阶段构建"></a>docker多阶段构建</h3><p>Docker 17.05版本以后，新装了Dockerfile多阶段构建，那么什么是多阶段构建呢？<br>我们知道Dockerfile build时候每一行命令会生成一层镜像，如果在编写Dockerfile时候不做些优化，<br>最后生成的镜像会较大，这对于后续的开放、测试、部署会带来一些小麻烦。如果能在编写时候注意到这些问题，并避开，何乐而不为呢？<br>我们知道Dockerfile优化的技巧有</p><p>多个 FROM 指令并不是为了生成多根的层关系，最后生成的镜像，仍以最后一条 FROM 为准，之前的 FROM 会被抛弃，那么之前的FROM 又有什么意义呢？<br>每一条 FROM 指令都是一个构建阶段，多条 FROM 就是多阶段构建，虽然最后生成的镜像只能是最后一个阶段的结果，但是，能够将前置阶段中的文件拷贝到后边的阶段中，这就是多阶段构建的最大意义。</p><h3 id="其他技巧"><a href="#其他技巧" class="headerlink" title="其他技巧"></a>其他技巧</h3><h4 id="使用dive-查看镜像层。"><a href="#使用dive-查看镜像层。" class="headerlink" title="使用dive 查看镜像层。"></a>使用<a href="https://github.com/wagoodman/dive" target="_blank" rel="noopener">dive</a> 查看镜像层。</h4><p>安装 dive <a href="https://github.com/wagoodman/dive#installation" target="_blank" rel="noopener">https://github.com/wagoodman/dive#installation</a><br><img src="https://github.com/wagoodman/dive/blob/master/.data/demo.gif" alt="demo of dive"><br>主要使用方法:</p><pre class="line-numbers language-shell"><code class="language-shell">dive <your-image-tag>dive build -t <some-tag> . # build your image then jump straight into analyzing it<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><h4 id="docker-slim-帮助减小镜像体积。"><a href="#docker-slim-帮助减小镜像体积。" class="headerlink" title="docker-slim 帮助减小镜像体积。"></a><a href="https://github.com/docker-slim/docker-slim" target="_blank" rel="noopener">docker-slim</a> 帮助减小镜像体积。</h4><p>安装 docker-slim <a href="https://github.com/docker-slim/docker-slim#installation" target="_blank" rel="noopener">https://github.com/docker-slim/docker-slim#installation</a></p><p><a href="https://asciinema.org/a/rHqW8cbr3vXe0WxorHsD36n7V" target="_blank" rel="noopener">观看demo视频</a></p><h4 id="安装软件时候去除依赖"><a href="#安装软件时候去除依赖" class="headerlink" title="安装软件时候去除依赖"></a>安装软件时候去除依赖</h4><pre class="line-numbers language-shell"><code class="language-shell"># ubuntuapt install -y -no-install-recommends# alpineapk add --no-cache ... && apk del build-dependencies# centosyum install -y ... && yum clean all<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h4 id="docker-squash压缩层。"><a href="#docker-squash压缩层。" class="headerlink" title="docker-squash压缩层。"></a><a href="https://github.com/jwilder/docker-squash" target="_blank" rel="noopener">docker-squash</a>压缩层。</h4><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
       
       
         <tags>
             
-            <tag> python </tag>
+            <tag> Docker </tag>
             
-            <tag> celery </tag>
+            <tag> Dockerfile </tag>
             
         </tags>
       
@@ -744,6 +718,25 @@
         <tags>
             
             <tag> ssh </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Docker基础命令</title>
+      <link href="/2019/01/22/rong-qi-ji-chu-ming-ling/"/>
+      <url>/2019/01/22/rong-qi-ji-chu-ming-ling/</url>
+      
+        <content type="html"><![CDATA[<h2 id="删除无用镜像"><a href="#删除无用镜像" class="headerlink" title="删除无用镜像"></a>删除无用镜像</h2><pre class="line-numbers language-shell"><code class="language-shell">sudo docker rmi $(sudo docker images -f "dangling=true" -q) --forcedocker prune image<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><h2 id="删除无用容器"><a href="#删除无用容器" class="headerlink" title="删除无用容器"></a>删除无用容器</h2><pre class="line-numbers language-shell"><code class="language-shell">docker prune container<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h2 id="Docker-容器打包-解包"><a href="#Docker-容器打包-解包" class="headerlink" title="Docker 容器打包/解包"></a>Docker 容器打包/解包</h2><pre class="line-numbers language-shell"><code class="language-shell">docker save [image-name] > image-name.tardocker load < image-name.tar<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Docker </tag>
             
         </tags>
       

@@ -5,10 +5,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="golang 项目结构, gis python golang ">
-    <meta name="description" content="
-        document.querySelectorAll(&#39;.github-emoji&#39;)
-          .forEach(el =&gt; {
-            if (!el.dataset.src) { return">
+    <meta name="description" content="Go 没有对项目的 layout 有硬性规定，也没有官方版本的 best practice，所以社区内部有几种不同的实践方式，可根据自身需求自行参考。">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -327,6 +324,10 @@
                                 <span class="chip bg-color">golang</span>
                             </a>
                         
+                            <a href="/tags/project/">
+                                <span class="chip bg-color">project</span>
+                            </a>
+                        
                     </div>
                     
                 </div>
@@ -348,7 +349,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    52
+                    283
                 </div>
                 
 
@@ -371,7 +372,21 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <script>
+                <p>Go 没有对项目的 layout 有硬性规定，也没有官方版本的 best practice，所以社区内部有几种不同的实践方式，可根据自身需求自行参考。</p>
+<h2 id="参考方案"><a href="#参考方案" class="headerlink" title="参考方案"></a>参考方案</h2><p>根据社区 <a href="https://github.com/golang-standards/project-layout" target="_blank" rel="noopener">Standard Go Project Layout</a> 提出的方案，我们可以将一个 Go Project 划分成以下几大目录：</p>
+<h2 id="go-目录"><a href="#go-目录" class="headerlink" title="go 目录"></a>go 目录</h2><h3 id="cmd"><a href="#cmd" class="headerlink" title="/cmd"></a>/cmd</h3><p>Main applications for this project.  </p>
+<h3 id="internal"><a href="#internal" class="headerlink" title="/internal"></a>/internal</h3><p>Private application and library code.</p>
+<h3 id="pkg"><a href="#pkg" class="headerlink" title="/pkg"></a>/pkg</h3><p>Library code that’s ok to use by external applications</p>
+<h3 id="vendor"><a href="#vendor" class="headerlink" title="/vendor"></a>/vendor</h3><p>Application dependencies (managed manually or by your favorite dependency management tool like <a href="https://github.com/golang/dep" target="_blank" rel="noopener">dep</a> ).</p>
+<h2 id="应用服务目录"><a href="#应用服务目录" class="headerlink" title="应用服务目录"></a>应用服务目录</h2><h3 id="api"><a href="#api" class="headerlink" title="/api"></a>/api</h3><p>OpenAPI/Swagger specs, JSON schema files, protocol definition files.<br>See the <a href="https://github.com/golang-standards/project-layout/blob/master/api/README.md" target="_blank" rel="noopener">/api</a> directory for examples.</p>
+<h2 id="web应用目录"><a href="#web应用目录" class="headerlink" title="web应用目录"></a>web应用目录</h2><h3 id="web"><a href="#web" class="headerlink" title="/web"></a>/web</h3><p>Web application specific components: static web assets, server side templates and SPAs.</p>
+<h2 id="公共应用目录"><a href="#公共应用目录" class="headerlink" title="公共应用目录"></a>公共应用目录</h2><h3 id="configs"><a href="#configs" class="headerlink" title="/configs"></a>/configs</h3><p>Configuration file templates or default configs.</p>
+<h3 id="init"><a href="#init" class="headerlink" title="/init"></a>/init</h3><p>System init (systemd, upstart, sysv) and process manager/supervisor (runit, supervisord) configs.</p>
+<h3 id="scripts"><a href="#scripts" class="headerlink" title="/scripts"></a>/scripts</h3><p>Scripts to perform various build, install, analysis, etc operations.</p>
+<h3 id="build"><a href="#build" class="headerlink" title="/build"></a>/build</h3><p>Packaging and Continuous Integration.</p>
+<h3 id="deployments"><a href="#deployments" class="headerlink" title="/deployments"></a>/deployments</h3><p>IaaS, PaaS, system and container orchestration deployment configurations and templates (docker-compose, kubernetes/helm, mesos, terraform, bosh).</p>
+<h3 id="test"><a href="#test" class="headerlink" title="/test"></a>/test</h3><p>Additional external test apps and test data.</p>
+<h2 id="其他目录"><a href="#其他目录" class="headerlink" title="其他目录"></a>其他目录</h2><h3 id="docs"><a href="#docs" class="headerlink" title="/docs"></a>/docs</h3><h3 id="tools"><a href="#tools" class="headerlink" title="/tools"></a>/tools</h3><h3 id="examples"><a href="#examples" class="headerlink" title="/examples"></a>/examples</h3><h3 id="third-party"><a href="#third-party" class="headerlink" title="/third_party"></a>/third_party</h3><h3 id="githooks"><a href="#githooks" class="headerlink" title="/githooks"></a>/githooks</h3><h3 id="assets"><a href="#assets" class="headerlink" title="/assets"></a>/assets</h3><h3 id="website"><a href="#website" class="headerlink" title="/website"></a>/website</h3><script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
@@ -454,6 +469,10 @@
                             
                                 <a href="/tags/golang/">
                                     <span class="chip bg-color">golang</span>
+                                </a>
+                            
+                                <a href="/tags/project/">
+                                    <span class="chip bg-color">project</span>
                                 </a>
                             
                         </div>
@@ -801,7 +820,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">6.9k</span>&nbsp;字
+                class="white-color">8.7k</span>&nbsp;字
             
             
             

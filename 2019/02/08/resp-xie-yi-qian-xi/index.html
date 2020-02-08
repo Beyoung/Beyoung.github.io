@@ -4,11 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="序列化 一, gis python golang ">
-    <meta name="description" content="
-        document.querySelectorAll(&#39;.github-emoji&#39;)
-          .forEach(el =&gt; {
-            if (!el.dataset.src) { return">
+    <meta name="keywords" content="RESP 协议浅析, gis python golang ">
+    <meta name="description" content="REdis Serialization Protocol .While the protocol was designed specifically for Redis, it can be used for other client-server software projects.">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -16,7 +13,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>序列化 一 | Youth&#39;s Blog</title>
+    <title>RESP 协议浅析 | Youth&#39;s Blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -201,12 +198,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/6.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/10.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">序列化 一</h1>
+                    <h1 class="description center-align post-title">RESP 协议浅析</h1>
                 </div>
             </div>
         </div>
@@ -323,8 +320,16 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/serializer/">
-                                <span class="chip bg-color">serializer</span>
+                            <a href="/tags/Redis/">
+                                <span class="chip bg-color">Redis</span>
+                            </a>
+                        
+                            <a href="/tags/Serialization/">
+                                <span class="chip bg-color">Serialization</span>
+                            </a>
+                        
+                            <a href="/tags/Protocol/">
+                                <span class="chip bg-color">Protocol</span>
                             </a>
                         
                     </div>
@@ -339,7 +344,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-01-22
+                    2019-02-08
                 </div>
                 
 
@@ -414,7 +419,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://blog.beyouth.xyz/2020/01/22/xu-lie-hua-yi/">https://blog.beyouth.xyz/2020/01/22/xu-lie-hua-yi/</a>
+                    <a href="https://blog.beyouth.xyz/2019/02/08/resp-xie-yi-qian-xi/">https://blog.beyouth.xyz/2019/02/08/resp-xie-yi-qian-xi/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -452,8 +457,16 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/serializer/">
-                                    <span class="chip bg-color">serializer</span>
+                                <a href="/tags/Redis/">
+                                    <span class="chip bg-color">Redis</span>
+                                </a>
+                            
+                                <a href="/tags/Serialization/">
+                                    <span class="chip bg-color">Serialization</span>
+                                </a>
+                            
+                                <a href="/tags/Protocol/">
+                                    <span class="chip bg-color">Protocol</span>
                                 </a>
                             
                         </div>
@@ -494,9 +507,9 @@
 
 <script type="text/javascript">
     disqus_config = function () {
-        this.page.url = 'https://blog.beyouth.xyz/2020/01/22/xu-lie-hua-yi/';
-        this.page.identifier = '/2020/01/22/xu-lie-hua-yi/';
-        this.page.title = '序列化 一';
+        this.page.url = 'https://blog.beyouth.xyz/2019/02/08/resp-xie-yi-qian-xi/';
+        this.page.identifier = '/2019/02/08/resp-xie-yi-qian-xi/';
+        this.page.title = 'RESP 协议浅析';
     };
     let disqus_shortname = 'twainyoung';
 
@@ -523,24 +536,25 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2020/01/22/redis-ji-chu-yong-fa/">
+                <a href="/2019/05/22/nei-wang-chuan-tou/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="redis 初探">
+                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="内网穿透">
                         
-                        <span class="card-title">redis 初探</span>
+                        <span class="card-title">内网穿透</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            redis是什么Redis 是是一款基于内存数据结构存储的开源软件（BSD licensed），常常被用作数据库，缓存和消息中间件。Redis 支持多种数据结构，如strings,hashes,lists,sets,sorted sets 
+                            内网机器连接方案#ssh/ssh #ssh/proxy  #ssh/nps
+目前有个需求，前置条件是：拥有三台机器，两台MAC分别位于独立的两个内网，命名A 、C，一台aliyun ubuntu拥有公网IP，命名B。要求：实现A、C连接(直
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-01-22
+                            <i class="far fa-clock fa-fw icon-date"></i>2019-05-22
                         </span>
                         <span class="publish-author">
                             
@@ -553,12 +567,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/redis/">
-                        <span class="chip bg-color">redis</span>
-                    </a>
-                    
-                    <a href="/tags/nosql/">
-                        <span class="chip bg-color">nosql</span>
+                    <a href="/tags/proxy/">
+                        <span class="chip bg-color">proxy</span>
                     </a>
                     
                 </div>
@@ -572,27 +582,29 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/01/22/python-wang-luo-mo-kuai/">
+                <a href="/2019/01/22/rong-qi-jing-xiang-da-xiao-you-hua/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="python 网络模块">
+                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="Docker镜像大小优化">
                         
-                        <span class="card-title">python 网络模块</span>
+                        <span class="card-title">Docker镜像大小优化</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return
+                            Docker镜像优化原理Docker 镜像大小优化的好处
+加快构建/部署. 较小的镜像加快网络传输.
+提高安全性. 镜像越小，无用程序越少，减少被攻击目标.
+减少存储开销
+
+Docker 镜像大小优化的方法选择较小的基础镜像从一开始选择较小
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-01-22
+                                <i class="far fa-clock fa-fw icon-date"></i>2019-01-22
                             </span>
                         <span class="publish-author">
                             
@@ -605,12 +617,12 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/python/">
-                        <span class="chip bg-color">python</span>
+                    <a href="/tags/Docker/">
+                        <span class="chip bg-color">Docker</span>
                     </a>
                     
-                    <a href="/tags/network/">
-                        <span class="chip bg-color">network</span>
+                    <a href="/tags/Dockerfile/">
+                        <span class="chip bg-color">Dockerfile</span>
                     </a>
                     
                 </div>
@@ -798,7 +810,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">6.9k</span>&nbsp;字
+                class="white-color">8.7k</span>&nbsp;字
             
             
             

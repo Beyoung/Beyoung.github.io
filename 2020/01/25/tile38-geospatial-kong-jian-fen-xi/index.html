@@ -5,10 +5,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="tile38 geospatial 空间分析 , gis python golang ">
-    <meta name="description" content="
-        document.querySelectorAll(&#39;.github-emoji&#39;)
-          .forEach(el =&gt; {
-            if (!el.dataset.src) { return">
+    <meta name="description" content="Tile38 features a high-performance spatial indexing engine. It supports a variety of object types including lat/lon points, bounding boxes, xyz tiles, geohashes, and geojson. Includes operations like Intersects, Within, Nearby, and Static &amp; Roaming Geofencing.">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -321,9 +318,21 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/golang/">
+                                <span class="chip bg-color">golang</span>
+                            </a>
+                        
+                            <a href="/tags/tile38/">
+                                <span class="chip bg-color">tile38</span>
+                            </a>
+                        
+                            <a href="/tags/geo/">
+                                <span class="chip bg-color">geo</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
@@ -344,7 +353,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    52
+                    171
                 </div>
                 
 
@@ -367,7 +376,24 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <script>
+                <h2 id="what-is-tile38"><a href="#what-is-tile38" class="headerlink" title="what is tile38"></a>what is tile38</h2><p>Tile38 features a high-performance spatial indexing engine. It supports a variety of object types including lat/lon points, bounding boxes, xyz tiles, geohashes, and geojson.<br>Includes operations like Intersects, Within, Nearby, and Static &amp; Roaming Geofencing.</p>
+<ul>
+<li>Ultra Fast Geospatial Database &amp; Geofencing Server</li>
+<li>Real-time Geofencing</li>
+<li>Fast Spatial Index</li>
+<li>Automated Events</li>
+</ul>
+<h2 id="installation"><a href="#installation" class="headerlink" title="installation"></a>installation</h2><h3 id="docker"><a href="#docker" class="headerlink" title="docker"></a>docker</h3><pre class="line-numbers language-shell"><code class="language-shell">docker pull tile38/tile38
+docker run -p 9851:9851 tile38/tile38<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h3 id="macos"><a href="#macos" class="headerlink" title="macos"></a>macos</h3><pre class="line-numbers language-shell"><code class="language-shell">brew install tile38
+tile38-server<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h3 id="ubuntu-debian"><a href="#ubuntu-debian" class="headerlink" title="ubuntu / debian"></a>ubuntu / debian</h3><pre class="line-numbers language-shell"><code class="language-shell">apt install tile38
+tile38-server<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h3 id="Release-Builds"><a href="#Release-Builds" class="headerlink" title="Release Builds"></a>Release Builds</h3><p>Tile38 has pre-built release binaries for OSX, Linux, FreeBSD, and Windows.<br>Instructions for using these binaries are on the GitHub <a href="https://github.com/tidwall/tile38/releases" target="_blank" rel="noopener">releases page</a>.</p>
+<h3 id="connect-tile38-server"><a href="#connect-tile38-server" class="headerlink" title="connect tile38 server"></a>connect tile38 server</h3><pre class="line-numbers language-shell"><code class="language-shell">tile38-cli
+# tile38> SET fleet truck1 POINT 33.5123 -112.2693
+# tile38> GET fleet truck1<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<h2 id="Tile38-commands"><a href="#Tile38-commands" class="headerlink" title="Tile38 commands"></a>Tile38 commands</h2><h3 id="Search"><a href="#Search" class="headerlink" title="Search"></a>Search</h3><h3 id="Keys"><a href="#Keys" class="headerlink" title="Keys"></a>Keys</h3><h3 id="Webhooks"><a href="#Webhooks" class="headerlink" title="Webhooks"></a>Webhooks</h3><h3 id="Channels"><a href="#Channels" class="headerlink" title="Channels"></a>Channels</h3><h3 id="Connection"><a href="#Connection" class="headerlink" title="Connection"></a>Connection</h3><h3 id="Replication"><a href="#Replication" class="headerlink" title="Replication"></a>Replication</h3><h3 id="Scripting"><a href="#Scripting" class="headerlink" title="Scripting"></a>Scripting</h3><h3 id="Server"><a href="#Server" class="headerlink" title="Server"></a>Server</h3><script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
@@ -447,7 +473,19 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/golang/">
+                                    <span class="chip bg-color">golang</span>
+                                </a>
+                            
+                                <a href="/tags/tile38/">
+                                    <span class="chip bg-color">tile38</span>
+                                </a>
+                            
+                                <a href="/tags/geo/">
+                                    <span class="chip bg-color">geo</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -769,7 +807,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">6.9k</span>&nbsp;字
+                class="white-color">8.7k</span>&nbsp;字
             
             
             

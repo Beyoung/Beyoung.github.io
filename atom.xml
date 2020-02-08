@@ -46,11 +46,11 @@
   </entry>
   
   <entry>
-    <title>redis 过期策略与淘汰机制</title>
+    <title>redis 过期策略、淘汰机制、持久化</title>
     <link href="https://blog.beyouth.xyz/2020/01/25/redis-guo-qi-ce-lue-yu-tao-tai-ji-zhi/"/>
     <id>https://blog.beyouth.xyz/2020/01/25/redis-guo-qi-ce-lue-yu-tao-tai-ji-zhi/</id>
     <published>2020-01-25T12:51:40.000Z</published>
-    <updated>2020-01-25T12:51:54.755Z</updated>
+    <updated>2020-02-08T11:36:39.270Z</updated>
     
     <summary type="html">
     
@@ -58,11 +58,7 @@
       
         
         
-          &lt;script&gt;
-        document.querySelectorAll(&#39;.github-emoji&#39;)
-          .forEach(el =&gt; {
-            if (!el.dataset.src) { return; }
-       
+          &lt;h2 id=&quot;过期策略&quot;&gt;&lt;a href=&quot;#过期策略&quot; class=&quot;headerlink&quot; title=&quot;过期策略&quot;&gt;&lt;/a&gt;过期策略&lt;/h2&gt;&lt;h3 id=&quot;定期删除&quot;&gt;&lt;a href=&quot;#定期删除&quot; class=&quot;headerlink&quot;
         
       
     
@@ -127,7 +123,7 @@
     <link href="https://blog.beyouth.xyz/2020/01/25/tile38-geospatial-kong-jian-fen-xi/"/>
     <id>https://blog.beyouth.xyz/2020/01/25/tile38-geospatial-kong-jian-fen-xi/</id>
     <published>2020-01-25T08:46:06.000Z</published>
-    <updated>2020-01-25T08:46:06.606Z</updated>
+    <updated>2020-02-08T10:31:36.921Z</updated>
     
     <summary type="html">
     
@@ -135,17 +131,19 @@
       
         
         
-          &lt;script&gt;
-        document.querySelectorAll(&#39;.github-emoji&#39;)
-          .forEach(el =&gt; {
-            if (!el.dataset.src) { return; }
-       
+          &lt;h2 id=&quot;what-is-tile38&quot;&gt;&lt;a href=&quot;#what-is-tile38&quot; class=&quot;headerlink&quot; title=&quot;what is tile38&quot;&gt;&lt;/a&gt;what is tile38&lt;/h2&gt;&lt;p&gt;Tile38 features a
         
       
     
     </summary>
     
     
+    
+      <category term="golang" scheme="https://blog.beyouth.xyz/tags/golang/"/>
+    
+      <category term="tile38" scheme="https://blog.beyouth.xyz/tags/tile38/"/>
+    
+      <category term="geo" scheme="https://blog.beyouth.xyz/tags/geo/"/>
     
   </entry>
   
@@ -241,7 +239,7 @@
     <link href="https://blog.beyouth.xyz/2020/01/22/http-xie-yi/"/>
     <id>https://blog.beyouth.xyz/2020/01/22/http-xie-yi/</id>
     <published>2020-01-22T12:29:35.000Z</published>
-    <updated>2020-01-22T12:29:58.046Z</updated>
+    <updated>2020-02-08T10:35:15.577Z</updated>
     
     <summary type="html">
     
@@ -257,9 +255,9 @@
     
     
     
-      <category term="http" scheme="https://blog.beyouth.xyz/tags/http/"/>
+      <category term="Protocol" scheme="https://blog.beyouth.xyz/tags/Protocol/"/>
     
-      <category term="protocol" scheme="https://blog.beyouth.xyz/tags/protocol/"/>
+      <category term="Http" scheme="https://blog.beyouth.xyz/tags/Http/"/>
     
   </entry>
   
@@ -345,35 +343,6 @@
       <category term="redis" scheme="https://blog.beyouth.xyz/tags/redis/"/>
     
       <category term="nosql" scheme="https://blog.beyouth.xyz/tags/nosql/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>序列化 一</title>
-    <link href="https://blog.beyouth.xyz/2020/01/22/xu-lie-hua-yi/"/>
-    <id>https://blog.beyouth.xyz/2020/01/22/xu-lie-hua-yi/</id>
-    <published>2020-01-22T05:09:06.000Z</published>
-    <updated>2020-01-22T05:28:28.945Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;script&gt;
-        document.querySelectorAll(&#39;.github-emoji&#39;)
-          .forEach(el =&gt; {
-            if (!el.dataset.src) { return; }
-       
-        
-      
-    
-    </summary>
-    
-    
-    
-      <category term="serializer" scheme="https://blog.beyouth.xyz/tags/serializer/"/>
     
   </entry>
   
@@ -582,6 +551,34 @@
     
     
       <category term="http" scheme="https://blog.beyouth.xyz/tags/http/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>golang 项目结构</title>
+    <link href="https://blog.beyouth.xyz/2020/01/22/golang-xiang-mu-jie-gou/"/>
+    <id>https://blog.beyouth.xyz/2020/01/22/golang-xiang-mu-jie-gou/</id>
+    <published>2020-01-22T05:06:37.000Z</published>
+    <updated>2020-02-08T11:42:47.137Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Go 没有对项目的 layout 有硬性规定，也没有官方版本的 best practice，所以社区内部有几种不同的实践方式，可根据自身需求自行参考。&lt;/p&gt;
+&lt;h2 id=&quot;参考方案&quot;&gt;&lt;a href=&quot;#参考方案&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="golang" scheme="https://blog.beyouth.xyz/tags/golang/"/>
+    
+      <category term="project" scheme="https://blog.beyouth.xyz/tags/project/"/>
     
   </entry>
   

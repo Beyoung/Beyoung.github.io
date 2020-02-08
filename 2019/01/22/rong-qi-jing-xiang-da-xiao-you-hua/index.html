@@ -4,11 +4,13 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="celery 一窥, gis python golang ">
-    <meta name="description" content="
-        document.querySelectorAll(&#39;.github-emoji&#39;)
-          .forEach(el =&gt; {
-            if (!el.dataset.src) { return">
+    <meta name="keywords" content="Docker镜像大小优化, gis python golang ">
+    <meta name="description" content="Docker镜像优化原理Docker 镜像大小优化的好处
+加快构建/部署. 较小的镜像加快网络传输.
+提高安全性. 镜像越小，无用程序越少，减少被攻击目标.
+减少存储开销
+
+Docker 镜像大小优化的方法选择较小的基础镜像从一开始选择较小">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -16,7 +18,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>celery 一窥 | Youth&#39;s Blog</title>
+    <title>Docker镜像大小优化 | Youth&#39;s Blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -201,12 +203,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/11.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/17.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">celery 一窥</h1>
+                    <h1 class="description center-align post-title">Docker镜像大小优化</h1>
                 </div>
             </div>
         </div>
@@ -323,27 +325,18 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/python/">
-                                <span class="chip bg-color">python</span>
+                            <a href="/tags/Docker/">
+                                <span class="chip bg-color">Docker</span>
                             </a>
                         
-                            <a href="/tags/celery/">
-                                <span class="chip bg-color">celery</span>
+                            <a href="/tags/Dockerfile/">
+                                <span class="chip bg-color">Dockerfile</span>
                             </a>
                         
                     </div>
                     
                 </div>
                 <div class="col s5 right-align">
-                    
-                    <div class="post-cate">
-                        <i class="fas fa-bookmark fa-fw icon-category"></i>
-                        
-                            <a href="/categories/scheduler/" class="post-category">
-                                scheduler
-                            </a>
-                        
-                    </div>
                     
                 </div>
             </div>
@@ -352,7 +345,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-03-22
+                    2019-01-22
                 </div>
                 
 
@@ -361,14 +354,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    52
+                    855
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    3 分
                 </div>
                 
 
@@ -384,7 +377,43 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <script>
+                <h2 id="Docker镜像优化原理"><a href="#Docker镜像优化原理" class="headerlink" title="Docker镜像优化原理"></a>Docker镜像优化原理</h2><h2 id="Docker-镜像大小优化的好处"><a href="#Docker-镜像大小优化的好处" class="headerlink" title="Docker 镜像大小优化的好处"></a>Docker 镜像大小优化的好处</h2><ul>
+<li>加快构建/部署. 较小的镜像加快网络传输.</li>
+<li>提高安全性. 镜像越小，无用程序越少，减少被攻击目标.</li>
+<li>减少存储开销</li>
+</ul>
+<h2 id="Docker-镜像大小优化的方法"><a href="#Docker-镜像大小优化的方法" class="headerlink" title="Docker 镜像大小优化的方法"></a>Docker 镜像大小优化的方法</h2><h3 id="选择较小的基础镜像"><a href="#选择较小的基础镜像" class="headerlink" title="选择较小的基础镜像"></a>选择较小的基础镜像</h3><p>从一开始选择较小的基础镜像，起到事半功倍的效果。目前，可选则的基础镜像有：</p>
+<ul>
+<li>Distroless</li>
+<li>Alpine</li>
+<li>Scratch</li>
+<li>Busybox</li>
+</ul>
+<h4 id="Distroless"><a href="#Distroless" class="headerlink" title="Distroless"></a>Distroless</h4><p>Distroless是Google推出的一个仅仅包含运行时环境，不包含包管理器，shell等其他程序。如果你的程序没有其他依赖的话，这是一个不错的选择。</p>
+<h4 id="Alpine"><a href="#Alpine" class="headerlink" title="Alpine"></a>Alpine</h4><p>Alpine 是一个基于MUSL，Busybox的安全的Linux发行版。麻雀虽小五脏俱全，虽然不到10M, 但是包含了一个包管理器和shell环境，这在我们实际的使用调试当中将非常有用。</p>
+<h4 id="Scratch"><a href="#Scratch" class="headerlink" title="Scratch"></a>Scratch</h4><p>Scratch是空白镜像，一般用于基础镜像构建。</p>
+<h4 id="Busybox"><a href="#Busybox" class="headerlink" title="Busybox"></a>Busybox</h4><p><a href="https://hub.docker.com/_/busybox" target="_blank" rel="noopener">https://hub.docker.com/_/busybox</a></p>
+<blockquote>
+<p>基础镜像基础在于缺少一些我们可能需要的工具，因此在选择基础镜像时候需要读者自己斟酌。<br>博主在生产环境下使用的是alpine，曾经在安装 python arrow库时候遇到一些问题，无法通过其apk安装，只得通过源码构建安装。<br>如果你在构建时候遇到什么问题，可以在文章下留言，大家一起探讨。</p>
+</blockquote>
+<h3 id="减少不必要的镜像层，去除不必要文件"><a href="#减少不必要的镜像层，去除不必要文件" class="headerlink" title="减少不必要的镜像层，去除不必要文件"></a>减少不必要的镜像层，去除不必要文件</h3><p>减少不必要的镜像层的诀窍在于使用单行命令<br>去除不必要的文件在于通过.dockerignore 在构建时候把不必要的文件剔除上下文</p>
+<h3 id="docker多阶段构建"><a href="#docker多阶段构建" class="headerlink" title="docker多阶段构建"></a>docker多阶段构建</h3><p>Docker 17.05版本以后，新装了Dockerfile多阶段构建，那么什么是多阶段构建呢？<br>我们知道Dockerfile build时候每一行命令会生成一层镜像，如果在编写Dockerfile时候不做些优化，<br>最后生成的镜像会较大，这对于后续的开放、测试、部署会带来一些小麻烦。如果能在编写时候注意到这些问题，并避开，何乐而不为呢？<br>我们知道Dockerfile优化的技巧有</p>
+<p>多个 FROM 指令并不是为了生成多根的层关系，最后生成的镜像，仍以最后一条 FROM 为准，之前的 FROM 会被抛弃，那么之前的FROM 又有什么意义呢？<br>每一条 FROM 指令都是一个构建阶段，多条 FROM 就是多阶段构建，虽然最后生成的镜像只能是最后一个阶段的结果，但是，能够将前置阶段中的文件拷贝到后边的阶段中，这就是多阶段构建的最大意义。</p>
+<h3 id="其他技巧"><a href="#其他技巧" class="headerlink" title="其他技巧"></a>其他技巧</h3><h4 id="使用dive-查看镜像层。"><a href="#使用dive-查看镜像层。" class="headerlink" title="使用dive 查看镜像层。"></a>使用<a href="https://github.com/wagoodman/dive" target="_blank" rel="noopener">dive</a> 查看镜像层。</h4><p>安装 dive <a href="https://github.com/wagoodman/dive#installation" target="_blank" rel="noopener">https://github.com/wagoodman/dive#installation</a><br><img src="https://github.com/wagoodman/dive/blob/master/.data/demo.gif" alt="demo of dive"><br>主要使用方法:</p>
+<pre class="line-numbers language-shell"><code class="language-shell">dive <your-image-tag>
+dive build -t <some-tag> . # build your image then jump straight into analyzing it
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h4 id="docker-slim-帮助减小镜像体积。"><a href="#docker-slim-帮助减小镜像体积。" class="headerlink" title="docker-slim 帮助减小镜像体积。"></a><a href="https://github.com/docker-slim/docker-slim" target="_blank" rel="noopener">docker-slim</a> 帮助减小镜像体积。</h4><p>安装 docker-slim <a href="https://github.com/docker-slim/docker-slim#installation" target="_blank" rel="noopener">https://github.com/docker-slim/docker-slim#installation</a></p>
+<p><a href="https://asciinema.org/a/rHqW8cbr3vXe0WxorHsD36n7V" target="_blank" rel="noopener">观看demo视频</a></p>
+<h4 id="安装软件时候去除依赖"><a href="#安装软件时候去除依赖" class="headerlink" title="安装软件时候去除依赖"></a>安装软件时候去除依赖</h4><pre class="line-numbers language-shell"><code class="language-shell"># ubuntu
+apt install -y -no-install-recommends
+
+# alpine
+apk add --no-cache ... && apk del build-dependencies
+
+# centos
+yum install -y ... && yum clean all<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h4 id="docker-squash压缩层。"><a href="#docker-squash压缩层。" class="headerlink" title="docker-squash压缩层。"></a><a href="https://github.com/jwilder/docker-squash" target="_blank" rel="noopener">docker-squash</a>压缩层。</h4><script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
@@ -427,7 +456,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://blog.beyouth.xyz/2019/03/22/celery-yi-kui/">https://blog.beyouth.xyz/2019/03/22/celery-yi-kui/</a>
+                    <a href="https://blog.beyouth.xyz/2019/01/22/rong-qi-jing-xiang-da-xiao-you-hua/">https://blog.beyouth.xyz/2019/01/22/rong-qi-jing-xiang-da-xiao-you-hua/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -465,12 +494,12 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/python/">
-                                    <span class="chip bg-color">python</span>
+                                <a href="/tags/Docker/">
+                                    <span class="chip bg-color">Docker</span>
                                 </a>
                             
-                                <a href="/tags/celery/">
-                                    <span class="chip bg-color">celery</span>
+                                <a href="/tags/Dockerfile/">
+                                    <span class="chip bg-color">Dockerfile</span>
                                 </a>
                             
                         </div>
@@ -511,9 +540,9 @@
 
 <script type="text/javascript">
     disqus_config = function () {
-        this.page.url = 'https://blog.beyouth.xyz/2019/03/22/celery-yi-kui/';
-        this.page.identifier = '/2019/03/22/celery-yi-kui/';
-        this.page.title = 'celery 一窥';
+        this.page.url = 'https://blog.beyouth.xyz/2019/01/22/rong-qi-jing-xiang-da-xiao-you-hua/';
+        this.page.identifier = '/2019/01/22/rong-qi-jing-xiang-da-xiao-you-hua/';
+        this.page.title = 'Docker镜像大小优化';
     };
     let disqus_shortname = 'twainyoung';
 
@@ -540,25 +569,24 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2019/05/22/nei-wang-chuan-tou/">
+                <a href="/2019/02/08/resp-xie-yi-qian-xi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="内网穿透">
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="RESP 协议浅析">
                         
-                        <span class="card-title">内网穿透</span>
+                        <span class="card-title">RESP 协议浅析</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            内网机器连接方案#ssh/ssh #ssh/proxy  #ssh/nps
-目前有个需求，前置条件是：拥有三台机器，两台MAC分别位于独立的两个内网，命名A 、C，一台aliyun ubuntu拥有公网IP，命名B。要求：实现A、C连接(直
+                            REdis Serialization Protocol .While the protocol was designed specifically for Redis, it can be used for other client-server software projects.
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2019-05-22
+                            <i class="far fa-clock fa-fw icon-date"></i>2019-02-08
                         </span>
                         <span class="publish-author">
                             
@@ -571,8 +599,16 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/proxy/">
-                        <span class="chip bg-color">proxy</span>
+                    <a href="/tags/Redis/">
+                        <span class="chip bg-color">Redis</span>
+                    </a>
+                    
+                    <a href="/tags/Serialization/">
+                        <span class="chip bg-color">Serialization</span>
+                    </a>
+                    
+                    <a href="/tags/Protocol/">
+                        <span class="chip bg-color">Protocol</span>
                     </a>
                     
                 </div>
@@ -807,7 +843,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">6.9k</span>&nbsp;字
+                class="white-color">8.7k</span>&nbsp;字
             
             
             
