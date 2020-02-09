@@ -251,14 +251,14 @@
                     <div class="post-statis col l4 hide-on-med-and-down" data-aos="zoom-in-right">
                         
 <div class="statis">
-    <span class="count"><a href="/">37</a></span>
+    <span class="count"><a href="/">36</a></span>
     <span class="name">文章</span>
 </div>
 
 
 
 <div class="statis">
-    <span class="count"><a href="/categories">3</a></span>
+    <span class="count"><a href="/categories">22</a></span>
     <span class="name">分类</span>
 </div>
 
@@ -281,14 +281,14 @@
                                 <div class="post-statis hide-on-large-only" data-aos="zoom-in-right">
                                     
 <div class="statis">
-    <span class="count"><a href="/">37</a></span>
+    <span class="count"><a href="/">36</a></span>
     <span class="name">文章</span>
 </div>
 
 
 
 <div class="statis">
-    <span class="count"><a href="/categories">3</a></span>
+    <span class="count"><a href="/categories">22</a></span>
     <span class="name">分类</span>
 </div>
 
@@ -431,7 +431,7 @@
                 name: '文章篇数',
                 type: 'line',
                 color: ['#6772e5'],
-                data: [1,0,0,1,0,0,0,0,0,0,0,29,1],
+                data: [1,0,0,1,0,0,0,0,0,0,0,28,1],
                 markPoint: {
                     symbolSize: 45,
                     color: ['#fa755a','#3ecf8e','#82d3f4'],
@@ -473,7 +473,7 @@
                 type: 'pie',
                 radius: '50%',
                 color: ['#6772e5', '#ff9e0f', '#fa755a', '#3ecf8e', '#82d3f4', '#ab47bc', '#525f7f', '#f51c47', '#26A69A'],
-                data: [{"name":"golang","value":3},{"name":"rpc","value":1},{"name":"package-manager","value":1}],
+                data: [{"name":"golang","value":3},{"name":"rpc","value":1},{"name":"package-manager","value":1},{"name":"http","value":2},{"name":"cache","value":1},{"name":"shell","value":1},{"name":"linux","value":1},{"name":"nginx","value":2},{"name":"python","value":5},{"name":"numpy","value":1},{"name":"pandas","value":1},{"name":"python","value":1},{"name":"algorithm","value":1},{"name":"network","value":1},{"name":"redis","value":2},{"name":"gis","value":1},{"name":"tile38","value":1},{"name":"golang","value":1},{"name":"gis","value":1},{"name":"ssh","value":2},{"name":"proxy","value":1},{"name":"Docker","value":1}],
                 itemStyle: {
                     emphasis: {
                         shadowBlur: 10,
@@ -497,7 +497,7 @@
         xAxis: [
             {
                 type: 'category',
-                data: ["golang","python","redis","ssh","proxy","network","nosql","数据分析","numpy","Protocol"]
+                data: ["golang","python","redis","ssh","gis","Docker","Protocol","数据分析","network","proxy"]
             }
         ],
         yAxis: [
@@ -510,7 +510,7 @@
                 type: 'bar',
                 color: ['#82d3f4'],
                 barWidth : 18,
-                data: [9,7,3,3,2,2,2,2,2,2],
+                data: [9,6,4,3,2,2,2,2,2,2],
                 markPoint: {
                     symbolSize: 45,
                     data: [{
@@ -761,12 +761,6 @@
                     
                 
                     
-                        <a href="/tags/geo/">
-                            <span class="chip center-align waves-effect waves-light chip-default">geo</span>
-                        </a>
-                    
-                
-                    
                         <a href="/tags/Redis/">
                             <span class="chip center-align waves-effect waves-light chip-default">Redis</span>
                         </a>
@@ -811,6 +805,12 @@
                     
                         <a href="/tags/project/">
                             <span class="chip center-align waves-effect waves-light chip-default">project</span>
+                        </a>
+                    
+                
+                    
+                        <a href="/tags/gis/">
+                            <span class="chip center-align waves-effect waves-light chip-default">gis</span>
                         </a>
                     
                 
@@ -972,6 +972,17 @@ $(function () {
     <script src="/js/matery.js"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=56360105"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+    gtag('config', '56360105');
+</script>
 
 
     <!-- Baidu Analytics -->

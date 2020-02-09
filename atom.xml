@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.beyouth.xyz/"/>
-  <updated>2020-02-08T08:07:15.727Z</updated>
+  <updated>2020-02-09T07:54:09.530Z</updated>
   <id>https://blog.beyouth.xyz/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://blog.beyouth.xyz/2020/02/08/python-numpy-shu-ju-fen-xi/"/>
     <id>https://blog.beyouth.xyz/2020/02/08/python-numpy-shu-ju-fen-xi/</id>
     <published>2020-02-08T03:41:06.000Z</published>
-    <updated>2020-02-08T08:07:15.727Z</updated>
+    <updated>2020-02-09T07:54:09.530Z</updated>
     
     <summary type="html">
     
@@ -35,6 +35,10 @@
     
     </summary>
     
+    
+      <category term="python" scheme="https://blog.beyouth.xyz/categories/python/"/>
+    
+      <category term="numpy" scheme="https://blog.beyouth.xyz/categories/python/numpy/"/>
     
     
       <category term="python" scheme="https://blog.beyouth.xyz/tags/python/"/>
@@ -50,7 +54,7 @@
     <link href="https://blog.beyouth.xyz/2020/01/25/redis-guo-qi-ce-lue-yu-tao-tai-ji-zhi/"/>
     <id>https://blog.beyouth.xyz/2020/01/25/redis-guo-qi-ce-lue-yu-tao-tai-ji-zhi/</id>
     <published>2020-01-25T12:51:40.000Z</published>
-    <updated>2020-02-08T11:36:39.270Z</updated>
+    <updated>2020-02-08T11:55:42.984Z</updated>
     
     <summary type="html">
     
@@ -123,7 +127,7 @@
     <link href="https://blog.beyouth.xyz/2020/01/25/tile38-geospatial-kong-jian-fen-xi/"/>
     <id>https://blog.beyouth.xyz/2020/01/25/tile38-geospatial-kong-jian-fen-xi/</id>
     <published>2020-01-25T08:46:06.000Z</published>
-    <updated>2020-02-08T10:31:36.921Z</updated>
+    <updated>2020-02-09T07:55:21.832Z</updated>
     
     <summary type="html">
     
@@ -138,12 +142,18 @@
     </summary>
     
     
+      <category term="tile38" scheme="https://blog.beyouth.xyz/categories/tile38/"/>
+    
+      <category term="golang" scheme="https://blog.beyouth.xyz/categories/tile38/golang/"/>
+    
+      <category term="gis" scheme="https://blog.beyouth.xyz/categories/tile38/golang/gis/"/>
+    
     
       <category term="golang" scheme="https://blog.beyouth.xyz/tags/golang/"/>
     
       <category term="tile38" scheme="https://blog.beyouth.xyz/tags/tile38/"/>
     
-      <category term="geo" scheme="https://blog.beyouth.xyz/tags/geo/"/>
+      <category term="gis" scheme="https://blog.beyouth.xyz/tags/gis/"/>
     
   </entry>
   
@@ -152,7 +162,7 @@
     <link href="https://blog.beyouth.xyz/2020/01/25/redis-geospatial-kong-jian-fen-xi/"/>
     <id>https://blog.beyouth.xyz/2020/01/25/redis-geospatial-kong-jian-fen-xi/</id>
     <published>2020-01-25T08:45:38.000Z</published>
-    <updated>2020-01-25T08:45:38.688Z</updated>
+    <updated>2020-02-09T07:55:04.873Z</updated>
     
     <summary type="html">
     
@@ -171,37 +181,14 @@
     </summary>
     
     
+      <category term="redis" scheme="https://blog.beyouth.xyz/categories/redis/"/>
     
-  </entry>
-  
-  <entry>
-    <title>python 数据分析 numpy</title>
-    <link href="https://blog.beyouth.xyz/2020/01/25/python-shu-ju-fen-xi-numpy/"/>
-    <id>https://blog.beyouth.xyz/2020/01/25/python-shu-ju-fen-xi-numpy/</id>
-    <published>2020-01-25T08:28:36.000Z</published>
-    <updated>2020-01-25T08:28:49.078Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;script&gt;
-        document.querySelectorAll(&#39;.github-emoji&#39;)
-          .forEach(el =&gt; {
-            if (!el.dataset.src) { return; }
-       
-        
-      
-    
-    </summary>
+      <category term="gis" scheme="https://blog.beyouth.xyz/categories/redis/gis/"/>
     
     
+      <category term="redis" scheme="https://blog.beyouth.xyz/tags/redis/"/>
     
-      <category term="python" scheme="https://blog.beyouth.xyz/tags/python/"/>
-    
-      <category term="numpy" scheme="https://blog.beyouth.xyz/tags/numpy/"/>
+      <category term="gis" scheme="https://blog.beyouth.xyz/tags/gis/"/>
     
   </entry>
   
@@ -210,7 +197,7 @@
     <link href="https://blog.beyouth.xyz/2020/01/23/python-pandas-shu-ju-fen-xi/"/>
     <id>https://blog.beyouth.xyz/2020/01/23/python-pandas-shu-ju-fen-xi/</id>
     <published>2020-01-23T04:32:35.000Z</published>
-    <updated>2020-02-08T03:42:06.368Z</updated>
+    <updated>2020-02-09T07:54:17.148Z</updated>
     
     <summary type="html">
     
@@ -224,6 +211,10 @@
     
     </summary>
     
+    
+      <category term="pandas" scheme="https://blog.beyouth.xyz/categories/pandas/"/>
+    
+      <category term="python" scheme="https://blog.beyouth.xyz/categories/pandas/python/"/>
     
     
       <category term="python" scheme="https://blog.beyouth.xyz/tags/python/"/>
@@ -239,7 +230,7 @@
     <link href="https://blog.beyouth.xyz/2020/01/22/http-xie-yi/"/>
     <id>https://blog.beyouth.xyz/2020/01/22/http-xie-yi/</id>
     <published>2020-01-22T12:29:35.000Z</published>
-    <updated>2020-02-08T10:35:15.577Z</updated>
+    <updated>2020-02-09T07:53:29.715Z</updated>
     
     <summary type="html">
     
@@ -253,6 +244,8 @@
     
     </summary>
     
+    
+      <category term="http" scheme="https://blog.beyouth.xyz/categories/http/"/>
     
     
       <category term="Protocol" scheme="https://blog.beyouth.xyz/tags/Protocol/"/>
@@ -324,7 +317,7 @@
     <link href="https://blog.beyouth.xyz/2020/01/22/redis-ji-chu-yong-fa/"/>
     <id>https://blog.beyouth.xyz/2020/01/22/redis-ji-chu-yong-fa/</id>
     <published>2020-01-22T12:18:06.000Z</published>
-    <updated>2020-01-25T12:56:50.814Z</updated>
+    <updated>2020-02-09T07:55:08.018Z</updated>
     
     <summary type="html">
     
@@ -339,6 +332,8 @@
     </summary>
     
     
+      <category term="redis" scheme="https://blog.beyouth.xyz/categories/redis/"/>
+    
     
       <category term="redis" scheme="https://blog.beyouth.xyz/tags/redis/"/>
     
@@ -351,7 +346,7 @@
     <link href="https://blog.beyouth.xyz/2020/01/22/python-wang-luo-mo-kuai/"/>
     <id>https://blog.beyouth.xyz/2020/01/22/python-wang-luo-mo-kuai/</id>
     <published>2020-01-22T05:08:38.000Z</published>
-    <updated>2020-01-22T05:27:19.001Z</updated>
+    <updated>2020-02-09T07:54:49.618Z</updated>
     
     <summary type="html">
     
@@ -369,6 +364,10 @@
     
     </summary>
     
+    
+      <category term="python" scheme="https://blog.beyouth.xyz/categories/python/"/>
+    
+      <category term="network" scheme="https://blog.beyouth.xyz/categories/python/network/"/>
     
     
       <category term="python" scheme="https://blog.beyouth.xyz/tags/python/"/>
@@ -382,7 +381,7 @@
     <link href="https://blog.beyouth.xyz/2020/01/22/python-bing-fa/"/>
     <id>https://blog.beyouth.xyz/2020/01/22/python-bing-fa/</id>
     <published>2020-01-22T05:08:30.000Z</published>
-    <updated>2020-01-22T05:12:12.593Z</updated>
+    <updated>2020-02-09T07:54:39.143Z</updated>
     
     <summary type="html">
     
@@ -400,6 +399,8 @@
     
     </summary>
     
+    
+      <category term="python" scheme="https://blog.beyouth.xyz/categories/python/"/>
     
     
       <category term="python" scheme="https://blog.beyouth.xyz/tags/python/"/>
@@ -411,7 +412,7 @@
     <link href="https://blog.beyouth.xyz/2020/01/22/python-suan-fa/"/>
     <id>https://blog.beyouth.xyz/2020/01/22/python-suan-fa/</id>
     <published>2020-01-22T05:08:16.000Z</published>
-    <updated>2020-01-22T05:27:15.381Z</updated>
+    <updated>2020-02-09T07:54:44.797Z</updated>
     
     <summary type="html">
     
@@ -429,6 +430,10 @@
     
     </summary>
     
+    
+      <category term="python" scheme="https://blog.beyouth.xyz/categories/python/"/>
+    
+      <category term="algorithm" scheme="https://blog.beyouth.xyz/categories/python/algorithm/"/>
     
     
       <category term="python" scheme="https://blog.beyouth.xyz/tags/python/"/>
@@ -442,7 +447,7 @@
     <link href="https://blog.beyouth.xyz/2020/01/22/python-ji-chu-yu-fa/"/>
     <id>https://blog.beyouth.xyz/2020/01/22/python-ji-chu-yu-fa/</id>
     <published>2020-01-22T05:07:57.000Z</published>
-    <updated>2020-01-22T05:12:07.175Z</updated>
+    <updated>2020-02-09T07:54:35.195Z</updated>
     
     <summary type="html">
     
@@ -460,6 +465,8 @@
     
     </summary>
     
+    
+      <category term="python" scheme="https://blog.beyouth.xyz/categories/python/"/>
     
     
       <category term="python" scheme="https://blog.beyouth.xyz/tags/python/"/>
@@ -499,7 +506,7 @@
     <link href="https://blog.beyouth.xyz/2020/01/22/linux-shell-bian-cheng/"/>
     <id>https://blog.beyouth.xyz/2020/01/22/linux-shell-bian-cheng/</id>
     <published>2020-01-22T05:07:21.000Z</published>
-    <updated>2020-01-22T05:27:03.132Z</updated>
+    <updated>2020-02-09T07:53:46.590Z</updated>
     
     <summary type="html">
     
@@ -517,6 +524,10 @@
     
     </summary>
     
+    
+      <category term="shell" scheme="https://blog.beyouth.xyz/categories/shell/"/>
+    
+      <category term="linux" scheme="https://blog.beyouth.xyz/categories/shell/linux/"/>
     
     
       <category term="linux" scheme="https://blog.beyouth.xyz/tags/linux/"/>
@@ -530,7 +541,7 @@
     <link href="https://blog.beyouth.xyz/2020/01/22/http-huan-cun-ji-zhi/"/>
     <id>https://blog.beyouth.xyz/2020/01/22/http-huan-cun-ji-zhi/</id>
     <published>2020-01-22T05:06:59.000Z</published>
-    <updated>2020-01-22T05:11:45.892Z</updated>
+    <updated>2020-02-09T07:53:40.387Z</updated>
     
     <summary type="html">
     
@@ -548,6 +559,10 @@
     
     </summary>
     
+    
+      <category term="http" scheme="https://blog.beyouth.xyz/categories/http/"/>
+    
+      <category term="cache" scheme="https://blog.beyouth.xyz/categories/http/cache/"/>
     
     
       <category term="http" scheme="https://blog.beyouth.xyz/tags/http/"/>
@@ -579,6 +594,39 @@
       <category term="golang" scheme="https://blog.beyouth.xyz/tags/golang/"/>
     
       <category term="project" scheme="https://blog.beyouth.xyz/tags/project/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>golang field tag</title>
+    <link href="https://blog.beyouth.xyz/2020/01/22/golang-field-tag/"/>
+    <id>https://blog.beyouth.xyz/2020/01/22/golang-field-tag/</id>
+    <published>2020-01-22T05:06:29.000Z</published>
+    <updated>2020-01-22T05:28:48.265Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;script&gt;
+        document.querySelectorAll(&#39;.github-emoji&#39;)
+          .forEach(el =&gt; {
+            if (!el.dataset.src) { return; }
+       
+        
+      
+    
+    </summary>
+    
+    
+      <category term="golang" scheme="https://blog.beyouth.xyz/categories/golang/"/>
+    
+    
+      <category term="golang" scheme="https://blog.beyouth.xyz/tags/golang/"/>
+    
+      <category term="field-tag" scheme="https://blog.beyouth.xyz/tags/field-tag/"/>
     
   </entry>
   

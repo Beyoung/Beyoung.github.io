@@ -197,7 +197,8 @@
     <style type="text/css"> /* don't remove. */
     .about-cover {
         height: 85vh;
-    } </style>
+    }
+</style>
 <div class="bg-cover pd-header about-cover">
     <div class="container">
         <div class="row">
@@ -210,7 +211,9 @@
         </div>
     </div>
 </div>
-<script> // 每天切换 banner 图. Switch banner image every day. $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay() + '.jpg)'); </script>
+<script>
+    // 每天切换 banner 图. Switch banner image every day. $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay() + '.jpg)');
+</script>
 
 
     <footer class="page-footer bg-color">
@@ -315,6 +318,17 @@ $(function () {
     <script src="/js/matery.js"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=56360105"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+    gtag('config', '56360105');
+</script>
 
 
     <!-- Baidu Analytics -->
