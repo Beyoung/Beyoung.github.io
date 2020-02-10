@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.beyouth.xyz/"/>
-  <updated>2020-02-09T07:54:09.530Z</updated>
+  <updated>2020-02-09T08:42:09.138Z</updated>
   <id>https://blog.beyouth.xyz/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>aka-map</title>
+    <link href="https://blog.beyouth.xyz/2020/02/09/aka-map/"/>
+    <id>https://blog.beyouth.xyz/2020/02/09/aka-map/</id>
+    <published>2020-02-09T08:32:24.000Z</published>
+    <updated>2020-02-09T08:42:09.138Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;script&gt;
+        document.querySelectorAll(&#39;.github-emoji&#39;)
+          .forEach(el =&gt; {
+            if (!el.dataset.src) { return; }
+       
+        
+      
+    
+    </summary>
+    
+    
+      <category term="map" scheme="https://blog.beyouth.xyz/categories/map/"/>
+    
+    
+      <category term="map" scheme="https://blog.beyouth.xyz/tags/map/"/>
+    
+  </entry>
   
   <entry>
     <title>python numpy 数据分析</title>
@@ -594,39 +625,6 @@
       <category term="golang" scheme="https://blog.beyouth.xyz/tags/golang/"/>
     
       <category term="project" scheme="https://blog.beyouth.xyz/tags/project/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>golang field tag</title>
-    <link href="https://blog.beyouth.xyz/2020/01/22/golang-field-tag/"/>
-    <id>https://blog.beyouth.xyz/2020/01/22/golang-field-tag/</id>
-    <published>2020-01-22T05:06:29.000Z</published>
-    <updated>2020-01-22T05:28:48.265Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;script&gt;
-        document.querySelectorAll(&#39;.github-emoji&#39;)
-          .forEach(el =&gt; {
-            if (!el.dataset.src) { return; }
-       
-        
-      
-    
-    </summary>
-    
-    
-      <category term="golang" scheme="https://blog.beyouth.xyz/categories/golang/"/>
-    
-    
-      <category term="golang" scheme="https://blog.beyouth.xyz/tags/golang/"/>
-    
-      <category term="field-tag" scheme="https://blog.beyouth.xyz/tags/field-tag/"/>
     
   </entry>
   

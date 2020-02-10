@@ -201,8 +201,9 @@ ssh -qTfnN -D 1087 tuwenyoung@gcp1
 </header>
 
     
+    
 
-
+    
 
 <div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/7.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
@@ -217,12 +218,12 @@ ssh -qTfnN -D 1087 tuwenyoung@gcp1
 </div>
 
 
-
-
-<main class="post-container content">
-
     
-    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+
+    <main class="post-container content">
+
+        
+        <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
 <style>
     #articleContent h1::before,
     #articleContent h2::before,
@@ -324,63 +325,64 @@ ssh -qTfnN -D 1087 tuwenyoung@gcp1
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                    <div class="article-tag">
-                        
-                            <a href="/tags/ssh/">
-                                <span class="chip bg-color">ssh</span>
-                            </a>
-                        
-                            <a href="/tags/proxy/">
-                                <span class="chip bg-color">proxy</span>
-                            </a>
-                        
-                    </div>
+                        <div class="article-tag">
+                            
+                                <a href="/tags/ssh/">
+                                    <span class="chip bg-color">ssh</span>
+                                </a>
+                            
+                                <a href="/tags/proxy/">
+                                    <span class="chip bg-color">proxy</span>
+                                </a>
+                            
+                        </div>
                     
                 </div>
                 <div class="col s5 right-align">
                     
-                    <div class="post-cate">
-                        <i class="fas fa-bookmark fa-fw icon-category"></i>
-                        
-                            <a href="/categories/ssh/" class="post-category">
-                                ssh
-                            </a>
-                        
-                    </div>
+                        <div class="post-cate">
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                                <a href="/categories/ssh/" class="post-category">
+                                    ssh
+                                </a>
+                            
+                        </div>
                     
                 </div>
             </div>
 
             <div class="post-info">
                 
-                <div class="post-date info-break-policy">
-                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-01-22
-                </div>
-                
-
-                
-
-                
-                <div class="info-break-policy">
-                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    790
-                </div>
-                
-
-                
-                <div class="info-break-policy">
-                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    3 分
-                </div>
-                
-
-                
-                    <div id="busuanzi_container_page_pv" class="info-break-policy">
-                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
-                        <span id="busuanzi_value_page_pv"></span>
+                    <div class="post-date info-break-policy">
+                        <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                        2019-01-22
                     </div>
-				
+                
+                
+                    
+
+                    
+                        <div class="info-break-policy">
+                            <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                            790
+                        </div>
+                    
+
+                    
+                        <div class="info-break-policy">
+                            <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                            3 分
+                        </div>
+                    
+
+                    
+                        <div id="busuanzi_container_page_pv" class="info-break-policy">
+                            <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                            <span id="busuanzi_value_page_pv"></span>
+                        </div>
+                    
+                
             </div>
 
         </div>
@@ -533,7 +535,8 @@ ssh —N g -R 8088:127.0.0.1:8088 xingzhe@139.196.77.60 -p 8001</code></pre><ul>
                         </div>
                     
                 </div>
-                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                <div class="post_share"
+                     style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
                     <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
 
 <div id="article-share">
@@ -699,42 +702,44 @@ ssh -qTfnN -D 1087 tuwenyoung@gcp1
 </div>
 
 
-<script>
-    $('#articleContent').on('copy', function (e) {
-        // IE8 or earlier browser is 'undefined'
-        if (typeof window.getSelection === 'undefined') return;
+    <script>
+        $('#articleContent').on('copy', function (e) {
+            // IE8 or earlier browser is 'undefined'
+            if (typeof window.getSelection === 'undefined') return;
 
-        var selection = window.getSelection();
-        // if the selection is short let's not annoy our users.
-        if (('' + selection).length < Number.parseInt('120')) {
-            return;
-        }
+            var selection = window.getSelection();
+            // if the selection is short let's not annoy our users.
+            if (('' + selection).length < Number.parseInt('120')) {
+                return;
+            }
 
-        // create a div outside of the visible area and fill it with the selected text.
-        var bodyElement = document.getElementsByTagName('body')[0];
-        var newdiv = document.createElement('div');
-        newdiv.style.position = 'absolute';
-        newdiv.style.left = '-99999px';
-        bodyElement.appendChild(newdiv);
-        newdiv.appendChild(selection.getRangeAt(0).cloneContents());
+            // create a div outside of the visible area and fill it with the selected text.
+            var bodyElement = document.getElementsByTagName('body')[0];
+            var newdiv = document.createElement('div');
+            newdiv.style.position = 'absolute';
+            newdiv.style.left = '-99999px';
+            bodyElement.appendChild(newdiv);
+            newdiv.appendChild(selection.getRangeAt(0).cloneContents());
 
-        // we need a <pre> tag workaround.
-        // otherwise the text inside "pre" loses all the line breaks!
-        if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'PRE') {
-            newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre>";
-        }
+            // we need a <pre> tag workaround.
+            // otherwise the text inside "pre" loses all the line breaks!
+            if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'PRE') {
+                newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre>";
+            }
 
-        var url = document.location.href;
-        newdiv.innerHTML += '<br />'
-            + '来源: Youth&#39;s Blog<br />'
-            + '文章作者: youth<br />'
-            + '文章链接: <a href="' + url + '">' + url + '</a><br />'
-            + '本文章著作权归作者所有，任何形式的转载都请注明出处。';
+            var url = document.location.href;
+            newdiv.innerHTML += '<br />'
+                + '来源: Youth&#39;s Blog<br />'
+                + '文章作者: youth<br />'
+                + '文章链接: <a href="' + url + '">' + url + '</a><br />'
+                + '本文章著作权归作者所有，任何形式的转载都请注明出处。';
 
-        selection.selectAllChildren(newdiv);
-        window.setTimeout(function () {bodyElement.removeChild(newdiv);}, 200);
-    });
-</script>
+            selection.selectAllChildren(newdiv);
+            window.setTimeout(function () {
+                bodyElement.removeChild(newdiv);
+            }, 200);
+        });
+    </script>
 
 
 <!-- 代码块功能依赖 -->
@@ -742,24 +747,26 @@ ssh -qTfnN -D 1087 tuwenyoung@gcp1
 
 <!-- 代码语言 -->
 
-<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+    <script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
 
 
 <!-- 代码块复制 -->
 
-<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+    <script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
 
 
 <!-- 代码块收缩 -->
 
-<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+    <script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
 
 
 <!-- 代码块折行 -->
 
-<style type="text/css">
-code[class*="language-"], pre[class*="language-"] { white-space: pre !important; }
-</style>
+    <style type="text/css">
+        code[class*="language-"], pre[class*="language-"] {
+            white-space: pre !important;
+        }
+    </style>
 
 
     </div>
@@ -856,9 +863,11 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
     });
 </script>
 
-    
+        
 
-</main>
+    </main>
+
+    
 
 
 
@@ -965,7 +974,7 @@ $(function () {
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=56360105"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-56360105-1"></script>
 <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() {
@@ -973,7 +982,7 @@ $(function () {
     }
 
     gtag('js', new Date());
-    gtag('config', '56360105');
+    gtag('config', 'UA-56360105-1');
 </script>
 
 
